@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="683" it="0" lt="682" ct="584" ts="1551249123514" s="true" lb="网贷天眼项目列表" rc="200" rm="" tn="网贷天眼 1-1" dt="text" by="1594" sby="277" ng="1" na="2"/>
+<httpSample t="717" it="0" lt="707" ct="584" ts="1551249123514" s="true" lb="网贷之家项目列表" rc="200" rm="" tn="网贷之家 2-1" dt="text" by="33528" sby="246" ng="1" na="2"/>
+<httpSample t="31" it="0" lt="31" ct="0" ts="1551249124230" s="true" lb="网贷之家提前还款列表" rc="200" rm="" tn="网贷之家 2-1" dt="text" by="454" sby="254" ng="1" na="2"/>
+<httpSample t="88" it="0" lt="88" ct="0" ts="1551249124205" s="true" lb="网贷天眼投资列表" rc="200" rm="" tn="网贷天眼 1-1" dt="text" by="319" sby="235" ng="1" na="1"/>
+<httpSample t="34" it="0" lt="34" ct="0" ts="1551249124294" s="true" lb="网贷天眼提前还款列表(存管)" rc="200" rm="" tn="网贷天眼 1-1" dt="text" by="2050" sby="311" ng="1" na="1"/>
+<httpSample t="205" it="0" lt="205" ct="113" ts="1551249124329" s="true" lb="网贷天眼提前还款列表(普通版)" rc="200" rm="OK" tn="网贷天眼 1-1" dt="text" by="1015" sby="310" ng="1" na="1"/>
+
+</testResults>
