@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testResults version="1.2">
-<httpSample t="3544" it="0" lt="3544" ct="3460" ts="1551324201631" s="true" lb="网贷天眼项目列表" rc="200" rm="" tn="网贷天眼 1-1" dt="text" by="1173" sby="277" sc="1" ec="0" ng="1" na="2" hn="hepeng">
+<httpSample t="617" it="0" lt="616" ct="523" ts="1551336426183" s="true" lb="网贷天眼项目列表" rc="200" rm="" tn="网贷天眼 1-1" dt="text" by="1173" sby="277" sc="1" ec="0" ng="1" na="2" hn="hepeng">
   <responseHeader class="java.lang.String">HTTP/1.1 200 
 Server: nginx
-Date: Thu, 28 Feb 2019 03:22:32 GMT
+Date: Thu, 28 Feb 2019 06:46:14 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -22,10 +22,10 @@ User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_91)
   <queryString class="java.lang.String">time_from=2018-12-26&amp;time_to=2018-12-26&amp;page_index=1&amp;page_size=15</queryString>
   <java.net.URL>https://tastest2bank.mindai.com/wdty/projectList</java.net.URL>
 </httpSample>
-<httpSample t="3623" it="0" lt="3618" ct="3460" ts="1551324201631" s="true" lb="网贷之家项目列表" rc="200" rm="" tn="网贷之家 2-1" dt="text" by="33535" sby="246" sc="1" ec="0" ng="1" na="2" hn="hepeng">
+<httpSample t="661" it="0" lt="656" ct="522" ts="1551336426183" s="true" lb="网贷之家项目列表" rc="200" rm="" tn="网贷之家 2-1" dt="text" by="33535" sby="246" sc="1" ec="0" ng="1" na="2" hn="hepeng">
   <responseHeader class="java.lang.String">HTTP/1.1 200 
 Server: nginx
-Date: Thu, 28 Feb 2019 03:22:32 GMT
+Date: Thu, 28 Feb 2019 06:46:14 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -44,52 +44,10 @@ User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_91)
   <queryString class="java.lang.String">date=2018-12-26&amp;page=1&amp;pageSize=10</queryString>
   <java.net.URL>https://tastest2bank.mindai.com/wdzj/projectList</java.net.URL>
 </httpSample>
-<httpSample t="139" it="0" lt="139" ct="83" ts="1551324205183" s="true" lb="网贷天眼投资列表" rc="200" rm="" tn="网贷天眼 1-1" dt="text" by="319" sby="235" sc="1" ec="0" ng="1" na="2" hn="hepeng">
+<httpSample t="21" it="0" lt="20" ct="0" ts="1551336426852" s="true" lb="网贷之家提前还款列表" rc="200" rm="" tn="网贷之家 2-1" dt="text" by="454" sby="254" sc="1" ec="0" ng="1" na="2" hn="hepeng">
   <responseHeader class="java.lang.String">HTTP/1.1 200 
 Server: nginx
-Date: Thu, 28 Feb 2019 03:22:33 GMT
-Content-Type: application/json;charset=UTF-8
-Transfer-Encoding: chunked
-Connection: keep-alive
-X-Application-Context: application:test1:8088
-</responseHeader>
-  <requestHeader class="java.lang.String">Connection: keep-alive
-Host: tastest2bank.mindai.com
-User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_91)
-</requestHeader>
-  <responseData class="java.lang.String">{&quot;result_code&quot;:1,&quot;result_msg&quot;:&quot;获取数据成功&quot;,&quot;page_count&quot;:12,&quot;page_index&quot;:30,&quot;loans&quot;:[]}</responseData>
-  <responseFile class="java.lang.String"></responseFile>
-  <cookies class="java.lang.String"></cookies>
-  <method class="java.lang.String">GET</method>
-  <queryString class="java.lang.String"></queryString>
-  <java.net.URL>https://tastest2bank.mindai.com/wdty/tenderList?status=1&amp;time_from=2018-12-26%00:00:00&amp;time_to=2018-12-26%23:59:59&amp;page_index=30&amp;page_size=20</java.net.URL>
-</httpSample>
-<httpSample t="28" it="0" lt="28" ct="0" ts="1551324205322" s="true" lb="网贷天眼提前还款列表(存管)" rc="200" rm="" tn="网贷天眼 1-1" dt="text" by="2050" sby="311" sc="1" ec="0" ng="1" na="2" hn="hepeng">
-  <responseHeader class="java.lang.String">HTTP/1.1 200 
-Server: nginx
-Date: Thu, 28 Feb 2019 03:22:33 GMT
-Content-Type: application/json;charset=UTF-8
-Transfer-Encoding: chunked
-Connection: keep-alive
-X-Application-Context: application:test1:8088
-</responseHeader>
-  <requestHeader class="java.lang.String">Connection: keep-alive
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 91
-Host: tastest2bank.mindai.com
-User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_91)
-</requestHeader>
-  <responseData class="java.lang.String">{&quot;result_code&quot;:1,&quot;result_msg&quot;:&quot;获取数据成功&quot;,&quot;page_count&quot;:1,&quot;page_index&quot;:1,&quot;loans&quot;:[{&quot;id&quot;:&quot;CG_158292&quot;,&quot;platform_name&quot;:&quot;民贷天下&quot;,&quot;url&quot;:&quot;https://bank.mindai.com/invest-product.html?projectId=158292&quot;,&quot;title&quot;:&quot;201812190506号&quot;,&quot;username&quot;:&quot;18900230009&quot;,&quot;userid&quot;:&quot;1100023353&quot;,&quot;status&quot;:1,&quot;c_type&quot;:0,&quot;amount&quot;:1000.0,&quot;rate&quot;:0.068,&quot;period&quot;:1,&quot;p_type&quot;:1,&quot;pay_way&quot;:3,&quot;process&quot;:1.0,&quot;reward&quot;:null,&quot;guarantee&quot;:null,&quot;start_time&quot;:&quot;2018-12-19 15:37:43&quot;,&quot;end_time&quot;:&quot;2018-12-19 15:40:25&quot;,&quot;invest_num&quot;:null,&quot;c_reward&quot;:null,&quot;prepayment_time&quot;:&quot;2018-12-26 19:00:02&quot;,&quot;accrual_end_time&quot;:&quot;2018-12-25 19:00:02&quot;,&quot;prepayment_type&quot;:0,&quot;prepayment_amount&quot;:1007.33,&quot;prepayment_accrual&quot;:5.66},{&quot;id&quot;:&quot;CG_168415&quot;,&quot;platform_name&quot;:&quot;民贷天下&quot;,&quot;url&quot;:&quot;https://bank.mindai.com/invest-product.html?projectId=168415&quot;,&quot;title&quot;:&quot;201812260003号&quot;,&quot;username&quot;:&quot;18605880190&quot;,&quot;userid&quot;:&quot;1100023402&quot;,&quot;status&quot;:1,&quot;c_type&quot;:0,&quot;amount&quot;:100.0,&quot;rate&quot;:0.0779,&quot;period&quot;:3,&quot;p_type&quot;:1,&quot;pay_way&quot;:1,&quot;process&quot;:1.0,&quot;reward&quot;:null,&quot;guarantee&quot;:null,&quot;start_time&quot;:&quot;2018-12-26 13:57:59&quot;,&quot;end_time&quot;:&quot;2018-12-26 13:58:48&quot;,&quot;invest_num&quot;:null,&quot;c_reward&quot;:null,&quot;prepayment_time&quot;:&quot;2018-12-26 20:55:16&quot;,&quot;accrual_end_time&quot;:&quot;2018-12-25 20:55:16&quot;,&quot;prepayment_type&quot;:0,&quot;prepayment_amount&quot;:100.25,&quot;prepayment_accrual&quot;:0.2},{&quot;id&quot;:&quot;CG_168417&quot;,&quot;platform_name&quot;:&quot;民贷天下&quot;,&quot;url&quot;:&quot;https://bank.mindai.com/invest-product.html?projectId=168417&quot;,&quot;title&quot;:&quot;201812260005号&quot;,&quot;username&quot;:&quot;18605880190&quot;,&quot;userid&quot;:&quot;1100023402&quot;,&quot;status&quot;:1,&quot;c_type&quot;:0,&quot;amount&quot;:100.0,&quot;rate&quot;:0.0779,&quot;period&quot;:3,&quot;p_type&quot;:1,&quot;pay_way&quot;:2,&quot;process&quot;:1.0,&quot;reward&quot;:null,&quot;guarantee&quot;:null,&quot;start_time&quot;:&quot;2018-12-26 13:58:10&quot;,&quot;end_time&quot;:&quot;2018-12-26 13:58:48&quot;,&quot;invest_num&quot;:null,&quot;c_reward&quot;:null,&quot;prepayment_time&quot;:&quot;2018-12-26 20:46:28&quot;,&quot;accrual_end_time&quot;:&quot;2018-12-25 20:46:28&quot;,&quot;prepayment_type&quot;:0,&quot;prepayment_amount&quot;:100.61,&quot;prepayment_accrual&quot;:0.6}]}</responseData>
-  <responseFile class="java.lang.String"></responseFile>
-  <cookies class="java.lang.String"></cookies>
-  <method class="java.lang.String">POST</method>
-  <queryString class="java.lang.String">time_from=2018-12-26+00%3A00%3A00&amp;time_to=2018-12-26+23%3A59%3A59&amp;page_index=1&amp;page_size=10</queryString>
-  <java.net.URL>https://tastest2bank.mindai.com/wdty/preRepayProjectList</java.net.URL>
-</httpSample>
-<httpSample t="94" it="0" lt="94" ct="78" ts="1551324205262" s="true" lb="网贷之家提前还款列表" rc="200" rm="" tn="网贷之家 2-1" dt="text" by="454" sby="254" sc="1" ec="0" ng="1" na="2" hn="hepeng">
-  <responseHeader class="java.lang.String">HTTP/1.1 200 
-Server: nginx
-Date: Thu, 28 Feb 2019 03:22:33 GMT
+Date: Thu, 28 Feb 2019 06:46:14 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -108,15 +66,57 @@ User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_91)
   <queryString class="java.lang.String">date=2018-12-26&amp;page=1&amp;pageSize=10</queryString>
   <java.net.URL>https://tastest2bank.mindai.com/wdzj/preRepayProjectList</java.net.URL>
 </httpSample>
-<httpSample t="169" it="0" lt="169" ct="87" ts="1551324205351" s="true" lb="网贷天眼提前还款列表(普通版)" rc="200" rm="OK" tn="网贷天眼 1-1" dt="text" by="1015" sby="310" sc="1" ec="0" ng="1" na="1" hn="hepeng">
+<httpSample t="106" it="0" lt="106" ct="0" ts="1551336426808" s="true" lb="网贷天眼投资列表" rc="200" rm="" tn="网贷天眼 1-1" dt="text" by="319" sby="235" sc="1" ec="0" ng="1" na="1" hn="hepeng">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 
+Server: nginx
+Date: Thu, 28 Feb 2019 06:46:14 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Application-Context: application:test1:8088
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: tastest2bank.mindai.com
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_91)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;result_code&quot;:1,&quot;result_msg&quot;:&quot;获取数据成功&quot;,&quot;page_count&quot;:12,&quot;page_index&quot;:30,&quot;loans&quot;:[]}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://tastest2bank.mindai.com/wdty/tenderList?status=1&amp;time_from=2018-12-26%00:00:00&amp;time_to=2018-12-26%23:59:59&amp;page_index=30&amp;page_size=20</java.net.URL>
+</httpSample>
+<httpSample t="43" it="0" lt="43" ct="0" ts="1551336426915" s="true" lb="网贷天眼提前还款列表(存管)" rc="200" rm="" tn="网贷天眼 1-1" dt="text" by="2050" sby="311" sc="1" ec="0" ng="1" na="1" hn="hepeng">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 
+Server: nginx
+Date: Thu, 28 Feb 2019 06:46:14 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Application-Context: application:test1:8088
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 91
+Host: tastest2bank.mindai.com
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_91)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;result_code&quot;:1,&quot;result_msg&quot;:&quot;获取数据成功&quot;,&quot;page_count&quot;:1,&quot;page_index&quot;:1,&quot;loans&quot;:[{&quot;id&quot;:&quot;CG_158292&quot;,&quot;platform_name&quot;:&quot;民贷天下&quot;,&quot;url&quot;:&quot;https://bank.mindai.com/invest-product.html?projectId=158292&quot;,&quot;title&quot;:&quot;201812190506号&quot;,&quot;username&quot;:&quot;18900230009&quot;,&quot;userid&quot;:&quot;1100023353&quot;,&quot;status&quot;:1,&quot;c_type&quot;:0,&quot;amount&quot;:1000.0,&quot;rate&quot;:0.068,&quot;period&quot;:1,&quot;p_type&quot;:1,&quot;pay_way&quot;:3,&quot;process&quot;:1.0,&quot;reward&quot;:null,&quot;guarantee&quot;:null,&quot;start_time&quot;:&quot;2018-12-19 15:37:43&quot;,&quot;end_time&quot;:&quot;2018-12-19 15:40:25&quot;,&quot;invest_num&quot;:null,&quot;c_reward&quot;:null,&quot;prepayment_time&quot;:&quot;2018-12-26 19:00:02&quot;,&quot;accrual_end_time&quot;:&quot;2018-12-25 19:00:02&quot;,&quot;prepayment_type&quot;:0,&quot;prepayment_amount&quot;:1007.33,&quot;prepayment_accrual&quot;:5.66},{&quot;id&quot;:&quot;CG_168415&quot;,&quot;platform_name&quot;:&quot;民贷天下&quot;,&quot;url&quot;:&quot;https://bank.mindai.com/invest-product.html?projectId=168415&quot;,&quot;title&quot;:&quot;201812260003号&quot;,&quot;username&quot;:&quot;18605880190&quot;,&quot;userid&quot;:&quot;1100023402&quot;,&quot;status&quot;:1,&quot;c_type&quot;:0,&quot;amount&quot;:100.0,&quot;rate&quot;:0.0779,&quot;period&quot;:3,&quot;p_type&quot;:1,&quot;pay_way&quot;:1,&quot;process&quot;:1.0,&quot;reward&quot;:null,&quot;guarantee&quot;:null,&quot;start_time&quot;:&quot;2018-12-26 13:57:59&quot;,&quot;end_time&quot;:&quot;2018-12-26 13:58:48&quot;,&quot;invest_num&quot;:null,&quot;c_reward&quot;:null,&quot;prepayment_time&quot;:&quot;2018-12-26 20:55:16&quot;,&quot;accrual_end_time&quot;:&quot;2018-12-25 20:55:16&quot;,&quot;prepayment_type&quot;:0,&quot;prepayment_amount&quot;:100.25,&quot;prepayment_accrual&quot;:0.2},{&quot;id&quot;:&quot;CG_168417&quot;,&quot;platform_name&quot;:&quot;民贷天下&quot;,&quot;url&quot;:&quot;https://bank.mindai.com/invest-product.html?projectId=168417&quot;,&quot;title&quot;:&quot;201812260005号&quot;,&quot;username&quot;:&quot;18605880190&quot;,&quot;userid&quot;:&quot;1100023402&quot;,&quot;status&quot;:1,&quot;c_type&quot;:0,&quot;amount&quot;:100.0,&quot;rate&quot;:0.0779,&quot;period&quot;:3,&quot;p_type&quot;:1,&quot;pay_way&quot;:2,&quot;process&quot;:1.0,&quot;reward&quot;:null,&quot;guarantee&quot;:null,&quot;start_time&quot;:&quot;2018-12-26 13:58:10&quot;,&quot;end_time&quot;:&quot;2018-12-26 13:58:48&quot;,&quot;invest_num&quot;:null,&quot;c_reward&quot;:null,&quot;prepayment_time&quot;:&quot;2018-12-26 20:46:28&quot;,&quot;accrual_end_time&quot;:&quot;2018-12-25 20:46:28&quot;,&quot;prepayment_type&quot;:0,&quot;prepayment_amount&quot;:100.61,&quot;prepayment_accrual&quot;:0.6}]}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">time_from=2018-12-26+00%3A00%3A00&amp;time_to=2018-12-26+23%3A59%3A59&amp;page_index=1&amp;page_size=10</queryString>
+  <java.net.URL>https://tastest2bank.mindai.com/wdty/preRepayProjectList</java.net.URL>
+</httpSample>
+<httpSample t="125" it="0" lt="125" ct="45" ts="1551336426958" s="true" lb="网贷天眼提前还款列表(普通版)" rc="200" rm="OK" tn="网贷天眼 1-1" dt="text" by="1015" sby="310" sc="1" ec="0" ng="1" na="1" hn="hepeng">
   <responseHeader class="java.lang.String">HTTP/1.1 200 OK
 Server: Tengine/2.1.2
-Date: Thu, 28 Feb 2019 03:22:32 GMT
+Date: Thu, 28 Feb 2019 06:46:14 GMT
 Content-Type: text/html;charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 Vary: Accept-Encoding
-Set-Cookie: JSESSIONID=6C560C30C33886A69DB456CA8704570F; Path=/; HttpOnly
+Set-Cookie: JSESSIONID=B3736B5F5A30DE54EE883E5911CDF0DF; Path=/; HttpOnly
 Set-Cookie: route=5029d98bd7c0782e7c0c51deaee1c442;Path=/
 </responseHeader>
   <requestHeader class="java.lang.String">Connection: keep-alive
