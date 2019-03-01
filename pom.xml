@@ -197,7 +197,31 @@
 				</execution>
 			</executions>		
 		</plugin>	
-				
+	<!-- 把resources文件夹下面的文件拷贝到jmeter/lib/ext目录下 -->
+        <plugin>
+            <artifactId>maven-resources-plugin</artifactId>
+            <version>2.6</version>
+            <executions>
+                <execution>
+                    <id>copy-resources-lib</id>
+                    <phase>compile</phase>
+                    <goals>
+                        <goal>copy-resources</goal>
+                    </goals>
+                    <configuration>
+                        <!-- test可以在环境变量中定义，也可以将下面写成绝对地址 -->
+                        <outputDirectory>${project.build.directory}/jmeter/lib/ext</outputDirectory>
+                        <resources>
+                            <resource>
+                                <!-- basedir标识所有工程 -->
+                                <directory>${basedir}/src/test/lib</directory>
+                                <filtering>false</filtering>
+                            </resource>
+                        </resources>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin> 			
 					
 	</plugins>	
 		<defaultGoal>clean</defaultGoal>
