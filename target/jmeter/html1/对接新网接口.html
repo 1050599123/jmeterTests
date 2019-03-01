@@ -1,0 +1,299 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="Author" content="shanhe.me"><title>JMeter Test Results</title><style type="text/css">
+            
+                * { margin: 0; padding: 0 }
+                html, body { width: 100%; height: 100%; background: #b4b4b4; font-size: 12px }
+                table { border: none; border-collapse: collapse; table-layout: fixed }
+                td { vertical-align: baseline; font-size: 12px }
+                #left-panel { position: absolute; left: 0; top: 0; bottom: 0; width: 300px; overflow: auto; background: #dee4ea }
+                #left-panel li.navigation { font-weight: bold; cursor: default; color: #9da8b2; line-height: 18px; background-position: 12px 5px; background-repeat: no-repeat; padding: 0 0 0 25px; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAICAYAAAArzdW1AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sDEBQqGbO7BEcAAAAdaVRYdENvbW1lbnQAAAAAAENyZWF0ZWQgd2l0aCBHSU1QZC5lBwAAAKRJREFUGNN1zM0KgkAYheF3RvtXSsGyWhRNaILS7bdt11W0KgJvoPwZp0UlBPUtz3nOJw7Hk7necv5dOA2Qaazo2vZP0LEt9olCVtqQROufKNmuqBuBNAYW4QzXGX6B0bDPcjGnMQYJ8Cg12U59oSzaUJQa4IUAXMclDHwAAn/MxPMw765FZd2QRgopBWmsKCrdfhXnS/4ZYElBXdyxewN008Y8AephLAkqz613AAAAAElFTkSuQmCC) }
+                #left-panel li.success { color: #565b60 }
+                #left-panel li.failure { color: red }
+                #left-panel li { list-style: none; color: black; cursor: pointer }
+                #left-panel li.selected { background-repeat: repeat-x; color: white; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAUCAYAAABMDlehAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sDEBQxLTs5O2gAAAAdaVRYdENvbW1lbnQAAAAAAENyZWF0ZWQgd2l0aCBHSU1QZC5lBwAAAEdJREFUCNc1y7ERgEAMA0GNUhIyGqM2uqKgtyWZhE9v53A/7/A6D7BkMDNgy2AroB2wHTCZv5UMOgFLG1bvd7XBckBlwCXjA5wMOF5iOX/MAAAAAElFTkSuQmCC) }
+                #left-panel div { line-height: 20px; background-position: 25px 3px; background-repeat: no-repeat; padding: 0 0 0 45px }
+                #left-panel div.success { background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAOCAYAAADwikbvAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sDEBULEEc6wzcAAAAdaVRYdENvbW1lbnQAAAAAAENyZWF0ZWQgd2l0aCBHSU1QZC5lBwAAAiNJREFUKM99kktIVGEYhp/jzJl08lI6logp2Y2EFkbtaqlFROsWrlq4ioJWQRs37VoUVItWkYEVRGSBlhleCpywDEWxTEuxcURTZ6YzxzP/5WshCOHUt36f93kXnyMi5Lsnb4clI4s4fhkXzp5w8mWcfHBvfEpUxVdCUUU6lUPNHuD86cYtBQX5GhPrM7hRg7GaSDRg2vuUd90WuOPVsOyqy6FFo2yOQHlU1S9z9dZT+S/8I7GCLlkAN4eyAf56mnT6Fy1HLnGuuYa++MS/4e74qMRqfXLaJ9BpfnsrLC0m2BYuoqwUbj/+274JD43OEqmexwvW8NUKXnaZtVSS1pNtAAyOvyC6v48HnUNb4Z7PH8UtTlIQWA5tb2RhYY7kz3l2FleytJYg/qWb8t2KZ/0PN+1hgI6uEUr2jpHKpGlquExVaS0VbjUZL7WxaqIXK6ADQ0n9GNfv9XCttWnD/O57t0TKFklnF3g5fJ/seoaa2D4O1x0F4PlgO9oIftbgFgYMfLgjACGqj0vlsddoUnj+Kt/mxunq72RP+UGqYjWMTA7R+b6dUCSEGEF5hoJQip6BaFs4HJtCyRrKs6wHCovDip/kys0WWpovMpOYBCtoT2N9B5uzWG0Zid8gnFrVFEQDtBaUrxEgXBimaEeER2/uIiK4roPOaMRYjBKsFly3fOO3G06dETGCWIsYjckprMphtEKMAQtgsMYi1mJMQHJ6xvkDKQoyphCzkl0AAAAASUVORK5CYII=) }
+                #left-panel div.failure { background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAOCAYAAADwikbvAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sDEBUJOEC5CU8AAAAdaVRYdENvbW1lbnQAAAAAAENyZWF0ZWQgd2l0aCBHSU1QZC5lBwAAAeVJREFUKM+NkDtok2EUhp8vl9ZLo/EyKI6KFgqCKC4OClrBWUQEcRRx1cGpk3WyInWrgoMZKkW8thYaEYQ0i7WC2ngrNDTERHJvkv/L/3//dxwc7F8jeOAsh/c973OOEhG61aPnaen7maXYt4MLZ4+pbppQt+F06jNH3QWOb8pxUs+SmJzjv83hxY8SVy3wNdtVneiHqe54IhLoB4/TUkyMyOrKj5yXoVtPZK02kLyYK7OnlqFWzgcCGtUC/YUJ3n5a/jd28tU7ORTN0myUA6Jms8bpWIa798elqzn1fokjThrpVBC3ETzNbYAuca59j/Hp+b/N869Tsk8tgVMCXQk+RlfQuk1/tMLMwzsSMCcm5zjhvoR2AdpF0GuwO4aqttS05ZSbZHhsBoAIwI83Cdkd/460XDAOG02d24MxvlR8dsUUh3f2UHaEtgdbWCHz4oZwcVCp66PP5FLhKjEc8DXaCMsNy8DYn/SnZ+L0hhWOb/F8yLs9fDtwk8j+VpqwrlC34PrgGEu2bhlYhZ1b8dncq3AMeBaUr/k6NUyk4ChKzu+N2hc6Bqody+WDG8g2fLatD7F3axjPgmvAtYJvIbouhhIRrl0ZktnkBGIt1gqeMXQ8D2MMiCIUCqFEsFhEQMSykCuqX0MzLAUJTzRsAAAAAElFTkSuQmCC) }
+                #left-panel div.detail { display: none }
+                #right-panel { position: absolute; right: 0; top: 0; bottom: 0; left: 301px; overflow: auto; background: white }
+                #right-panel .group { font-size: 12px; font-weight: bold; line-height: 16px; padding: 0 0 0 18px; counter-reset: assertion; background-repeat: repeat-x; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAQCAYAAADXnxW3AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sDEBUkDq8pxjkAAAAdaVRYdENvbW1lbnQAAAAAAENyZWF0ZWQgd2l0aCBHSU1QZC5lBwAAADdJREFUCNdVxrERwDAMAzGK0v47eS6Z927SpMFBAAbkvSvnRk5+7K5cVfLMyN39bWakJAjA5xw9R94jN3tVhVEAAAAASUVORK5CYII=) }
+                #right-panel .zebra { background-repeat: repeat; padding: 0 0 0 18px; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAmCAYAAAAFvPEHAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sDEBYWFlNztEcAAAAdaVRYdENvbW1lbnQAAAAAAENyZWF0ZWQgd2l0aCBHSU1QZC5lBwAAABdJREFUCNdjYKAtePv5338mBgYGBpoQAGy1BAJlb/y6AAAAAElFTkSuQmCC) }
+                #right-panel .data { line-height: 19px; white-space: initial; }
+                #right-panel pre.data { white-space: pre }
+                #right-panel tbody.failure { color: red }
+                #right-panel td.key { min-width: 108px }
+                #right-panel td.delimiter { min-width: 18px }
+                #right-panel td.assertion:before { counter-increment: assertion; content: counter(assertion) ". " }
+                #right-panel td.assertion { color: black }
+                #right-panel .trail { border-top: 1px solid #b4b4b4 }
+                
+            </style><script type="text/javascript">
+            
+                var onclick_li = (function() {
+                    var last_selected = null;
+                    return function(li) {
+                        if( last_selected == li )
+                            return;
+                        if( last_selected )
+                            last_selected.className = "";
+                        last_selected = li;
+                        last_selected.className = "selected";
+                        document.getElementById("right-panel").innerHTML = last_selected.firstChild.nextSibling.innerHTML;
+                        return false;
+                    };
+                })();
+                
+                var patch_timestamp = function() {
+                    var spans = document.getElementsByTagName("span");
+                    var len = spans.length;
+                    for( var i = 0; i < len; ++i ) {
+                        var span = spans[i];
+                        if( "patch_timestamp" == span.className )
+                            span.innerHTML = new Date( parseInt( span.innerHTML ) );
+                    }
+                };
+                
+                var patch_navigation_class = (function() {
+                
+                    var set_class = function(el, flag) {
+                        if(el) {
+                            el.className += flag ? " success" : " failure";
+                        }
+                    };
+                
+                    var traverse = function(el, group_el, flag) {
+                        while(1) {
+                            if(el) {
+                                if(el.className == 'navigation') {
+                                    set_class(group_el, flag);
+                                    group_el = el;
+                                    flag = true;
+                                } else {
+                                    var o = el.firstChild;
+                                    o = o ? o.className : null;
+                                    flag = flag ? (o == 'success') : false;
+                                }
+                                el = el.nextSibling;
+                            } else {
+                                set_class(group_el, flag);
+                                break;
+                            }
+                        }
+                    };
+                    
+                    return function() {
+                        var o = document.getElementById("result-list");
+                        o = o ? o.firstChild : null;
+                        if(o)
+                            traverse(o, null, true);
+                    };
+                })();
+        
+                window.onload = function() {
+                    patch_timestamp();
+                    patch_navigation_class();
+                    var o = document.getElementById("result-list");
+                    o = o ? o.firstChild : null;
+                    o = o ? o.nextSibling : null;
+                    if(o)
+                        onclick_li(o);
+                };
+        
+            </script></head><body><div id="left-panel"><ol id="result-list"><li class="navigation">Thread: 新网充值 -- 完成 1-1</li><li onclick="return onclick_li(this);"><div class="success">HTTP请求</div><div class="detail"><div class="group">Sampler</div><div class="zebra"><table><tr><td class="data key">Thread Name</td><td class="data delimiter">:</td><td class="data">新网充值 -- 完成 1-1</td></tr><tr><td class="data key">Timestamp</td><td class="data delimiter">:</td><td class="data"><span class="patch_timestamp">1551424588568</span></td></tr><tr><td class="data key">Time</td><td class="data delimiter">:</td><td class="data">120 ms</td></tr><tr><td class="data key">Latency</td><td class="data delimiter">:</td><td class="data">120 ms</td></tr><tr><td class="data key">Bytes</td><td class="data delimiter">:</td><td class="data">548</td></tr><tr><td class="data key">Sample Count</td><td class="data delimiter">:</td><td class="data">1</td></tr><tr><td class="data key">Error Count</td><td class="data delimiter">:</td><td class="data">0</td></tr><tr><td class="data key">Response Code</td><td class="data delimiter">:</td><td class="data">200</td></tr><tr><td class="data key">Response Message</td><td class="data delimiter">:</td><td class="data"></td></tr></table></div><div class="trail"></div><div class="group">Request</div><div class="zebra"><table><tr><td class="data key">Method/Url</td><td class="data delimiter">:</td><td class="data"><pre class="data">POST http://47.107.239.121:8087/api</pre></td></tr><tr><td class="data key">Query String</td><td class="data delimiter">:</td><td class="data"><pre class="data">method=user.login&amp;format=json&amp;appKey=00000001&amp;locate=cn&amp;v=1.0&amp;timestamp=2019-03-01+15%3A16%3A28&amp;bizContent=VgTVljW5eilgwhMGzZq0%2FZVWDtvT2KZ%2FFVY64zM%2BsVdQRMSrwQvfRvlzCQFRnnKr%2BRJl%2BndWPwgx3lywgInrOmmHYgRusrAOtT1lInieEyckIyejjkBsI0CaLue9hd9A&amp;sign=8FEE48F7551D39DBB610012F475EAA9F40F1FD5D</pre></td></tr><tr><td class="data key">Cookies</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr><tr><td class="data key">Request Headers</td><td class="data delimiter">:</td><td class="data"><pre class="data">Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 291
+Host: 47.107.239.121:8087
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_91)
+</pre></td></tr></table></div><div class="trail"></div><div class="group">Response</div><div class="zebra"><table><tr><td class="data key">Response Headers</td><td class="data delimiter">:</td><td class="data"><pre class="data">HTTP/1.1 200 
+X-Application-Context: application:test1:8087
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: *
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 01 Mar 2019 07:15:35 GMT
+</pre></td></tr><tr><td class="data key" style="word-wrap: break-word;">Response Data</td><td class="data delimiter">:</td><td class="data"><pre class="data">{"code":"0000","message":"成功","data":{"userId":1100023960,"userName":"18655289109","sessionId":"F6EA596E506EA9DECDFB7FA5AE1CA8FA","userRole":"1","oldUserId":1100023960,"activityTag":"","isRealNameAuth":1,"headImgUrl":"","signkey":"0961e730bb59533fe9b443829be95f37"},"timestamp":1551424535080}</pre></td></tr><tr><td class="data key">Response File</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr></table></div><div class="trail"></div></div></li><li onclick="return onclick_li(this);"><div class="success">获取sessionID_01</div><div class="detail"><div class="group">Sampler</div><div class="zebra"><table><tr><td class="data key">Thread Name</td><td class="data delimiter">:</td><td class="data">新网充值 -- 完成 1-1</td></tr><tr><td class="data key">Timestamp</td><td class="data delimiter">:</td><td class="data"><span class="patch_timestamp">1551424588400</span></td></tr><tr><td class="data key">Time</td><td class="data delimiter">:</td><td class="data">120 ms</td></tr><tr><td class="data key">Latency</td><td class="data delimiter">:</td><td class="data">120 ms</td></tr><tr><td class="data key">Bytes</td><td class="data delimiter">:</td><td class="data">548</td></tr><tr><td class="data key">Sample Count</td><td class="data delimiter">:</td><td class="data">1</td></tr><tr><td class="data key">Error Count</td><td class="data delimiter">:</td><td class="data">0</td></tr><tr><td class="data key">Response Code</td><td class="data delimiter">:</td><td class="data">200</td></tr><tr><td class="data key">Response Message</td><td class="data delimiter">:</td><td class="data">Number of samples in transaction : 1, number of failing samples : 0</td></tr></table></div><div class="trail"></div><div class="group">Request</div><div class="zebra"><table><tr><td class="data key">Method/Url</td><td class="data delimiter">:</td><td class="data"><pre class="data"> </pre></td></tr><tr><td class="data key">Query String</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr><tr><td class="data key">Cookies</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr><tr><td class="data key">Request Headers</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr></table></div><div class="trail"></div><div class="group">Response</div><div class="zebra"><table><tr><td class="data key">Response Headers</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr><tr><td class="data key" style="word-wrap: break-word;">Response Data</td><td class="data delimiter">:</td><td class="data"><pre class="data">Non-TEXT response data, cannot record: ()</pre></td></tr><tr><td class="data key">Response File</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr></table></div><div class="trail"></div></div></li><li onclick="return onclick_li(this);"><div class="success">HTTP请求</div><div class="detail"><div class="group">Sampler</div><div class="zebra"><table><tr><td class="data key">Thread Name</td><td class="data delimiter">:</td><td class="data">新网充值 -- 完成 1-1</td></tr><tr><td class="data key">Timestamp</td><td class="data delimiter">:</td><td class="data"><span class="patch_timestamp">1551424588704</span></td></tr><tr><td class="data key">Time</td><td class="data delimiter">:</td><td class="data">59 ms</td></tr><tr><td class="data key">Latency</td><td class="data delimiter">:</td><td class="data">59 ms</td></tr><tr><td class="data key">Bytes</td><td class="data delimiter">:</td><td class="data">989</td></tr><tr><td class="data key">Sample Count</td><td class="data delimiter">:</td><td class="data">1</td></tr><tr><td class="data key">Error Count</td><td class="data delimiter">:</td><td class="data">0</td></tr><tr><td class="data key">Response Code</td><td class="data delimiter">:</td><td class="data">200</td></tr><tr><td class="data key">Response Message</td><td class="data delimiter">:</td><td class="data"></td></tr></table></div><div class="trail"></div><div class="group">Request</div><div class="zebra"><table><tr><td class="data key">Method/Url</td><td class="data delimiter">:</td><td class="data"><pre class="data">POST http://47.107.239.121:8087/api</pre></td></tr><tr><td class="data key">Query String</td><td class="data delimiter">:</td><td class="data"><pre class="data">method=user.xwRecharge&amp;format=json&amp;appKey=00000001&amp;locate=cn&amp;v=5.0.0&amp;sessionId=F6EA596E506EA9DECDFB7FA5AE1CA8FA&amp;timestamp=2019-03-01+15%3A16%3A28&amp;bizContent=emjRFY5tyeXleky8RfB1Tn0r%2F5g4pXtPBtXcTukXasnzMHArsUgQ4yFDfHnPGSikecpFOoh0gq9bE3jyzusj96ndwkup1l%2BAcWETCT2LfBMt2QCKtyykQSWuWcJnQldOCrucdQMjv5jBuys7dZ0kIa%2FMRuSnoVvoOzbmhst11Q05RCvHYtJm2UXSgdtce609&amp;sign=E4F2DF184987B1BFCF894D70F40160C603F0A11F</pre></td></tr><tr><td class="data key">Cookies</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr><tr><td class="data key">Request Headers</td><td class="data delimiter">:</td><td class="data"><pre class="data">Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 401
+Host: 47.107.239.121:8087
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_91)
+</pre></td></tr></table></div><div class="trail"></div><div class="group">Response</div><div class="zebra"><table><tr><td class="data key">Response Headers</td><td class="data delimiter">:</td><td class="data"><pre class="data">HTTP/1.1 200 
+X-Application-Context: application:test1:8087
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: *
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 01 Mar 2019 07:15:35 GMT
+</pre></td></tr><tr><td class="data key" style="word-wrap: break-word;">Response Data</td><td class="data delimiter">:</td><td class="data"><pre class="data">{"code":"0000","message":"成功","data":{"url":"https://xwbk.lanmaoly.com/bha-neo-app/lanmaotech/gateway","xwParams":{"serviceName":"RECHARGE","reqData":"{\"amount\":33,\"bankcode\":\"BKCH\",\"expectPayCompany\":\"ALLINPAY\",\"expired\":\"20190301152535\",\"platformUserNo\":\"inve_1100023960_190227163243\",\"rechargeWay\":\"SWIFT\",\"redirectUrl\":\"https://test2bank.mindai.com/callback/recharge\",\"requestNo\":\"recharge_20190301151535140198\",\"timestamp\":\"20190301151535\"}","sign":"u8MlzGdmNPmwTq/vQ+d1KosHd3aRldRwp74DXxq2JEC7+z+EZnaoqM880+oazPaJrcSrXexFD6wY3dkZ5MPbaENDk5tTS+/taTxss8NmHUuKFFC1x2EfC/12TdGYYQ4K5oHRhJVhTTH3zHpIt8j/SBa54cS7yhFC4RJC2UajIh8=","platformNo":"6000005781","keySerial":"1"}},"timestamp":1551424535164}</pre></td></tr><tr><td class="data key">Response File</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr></table></div><div class="trail"></div></div></li><li onclick="return onclick_li(this);"><div class="success">点击充值按钮_02</div><div class="detail"><div class="group">Sampler</div><div class="zebra"><table><tr><td class="data key">Thread Name</td><td class="data delimiter">:</td><td class="data">新网充值 -- 完成 1-1</td></tr><tr><td class="data key">Timestamp</td><td class="data delimiter">:</td><td class="data"><span class="patch_timestamp">1551424588699</span></td></tr><tr><td class="data key">Time</td><td class="data delimiter">:</td><td class="data">59 ms</td></tr><tr><td class="data key">Latency</td><td class="data delimiter">:</td><td class="data">59 ms</td></tr><tr><td class="data key">Bytes</td><td class="data delimiter">:</td><td class="data">989</td></tr><tr><td class="data key">Sample Count</td><td class="data delimiter">:</td><td class="data">1</td></tr><tr><td class="data key">Error Count</td><td class="data delimiter">:</td><td class="data">0</td></tr><tr><td class="data key">Response Code</td><td class="data delimiter">:</td><td class="data">200</td></tr><tr><td class="data key">Response Message</td><td class="data delimiter">:</td><td class="data">Number of samples in transaction : 1, number of failing samples : 0</td></tr></table></div><div class="trail"></div><div class="group">Request</div><div class="zebra"><table><tr><td class="data key">Method/Url</td><td class="data delimiter">:</td><td class="data"><pre class="data"> </pre></td></tr><tr><td class="data key">Query String</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr><tr><td class="data key">Cookies</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr><tr><td class="data key">Request Headers</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr></table></div><div class="trail"></div><div class="group">Response</div><div class="zebra"><table><tr><td class="data key">Response Headers</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr><tr><td class="data key" style="word-wrap: break-word;">Response Data</td><td class="data delimiter">:</td><td class="data"><pre class="data">Non-TEXT response data, cannot record: ()</pre></td></tr><tr><td class="data key">Response File</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr></table></div><div class="trail"></div></div></li><li onclick="return onclick_li(this);"><div class="success">跳转到新网充值页面</div><div class="detail"><div class="group">Sampler</div><div class="zebra"><table><tr><td class="data key">Thread Name</td><td class="data delimiter">:</td><td class="data">新网充值 -- 完成 1-1</td></tr><tr><td class="data key">Timestamp</td><td class="data delimiter">:</td><td class="data"><span class="patch_timestamp">1551424588774</span></td></tr><tr><td class="data key">Time</td><td class="data delimiter">:</td><td class="data">410 ms</td></tr><tr><td class="data key">Latency</td><td class="data delimiter">:</td><td class="data">410 ms</td></tr><tr><td class="data key">Bytes</td><td class="data delimiter">:</td><td class="data">277</td></tr><tr><td class="data key">Sample Count</td><td class="data delimiter">:</td><td class="data">1</td></tr><tr><td class="data key">Error Count</td><td class="data delimiter">:</td><td class="data">0</td></tr><tr><td class="data key">Response Code</td><td class="data delimiter">:</td><td class="data">302</td></tr><tr><td class="data key">Response Message</td><td class="data delimiter">:</td><td class="data"></td></tr></table></div><div class="trail"></div><div class="group">Request</div><div class="zebra"><table><tr><td class="data key">Method/Url</td><td class="data delimiter">:</td><td class="data"><pre class="data">POST https://xwbk.lanmaoly.com/bha-neo-app/lanmaotech/gateway</pre></td></tr><tr><td class="data key">Query String</td><td class="data delimiter">:</td><td class="data"><pre class="data">serviceName=RECHARGE&amp;reqData=%7B%22amount%22%3A33%2C%22bankcode%22%3A%22BKCH%22%2C%22expectPayCompany%22%3A%22ALLINPAY%22%2C%22expired%22%3A%2220190301152535%22%2C%22platformUserNo%22%3A%22inve_1100023960_190227163243%22%2C%22rechargeWay%22%3A%22SWIFT%22%2C%22redirectUrl%22%3A%22https%3A%2F%2Ftest2bank.mindai.com%2Fcallback%2Frecharge%22%2C%22requestNo%22%3A%22recharge_20190301151535140198%22%2C%22timestamp%22%3A%2220190301151535%22%7D&amp;sign=u8MlzGdmNPmwTq%2FvQ%2Bd1KosHd3aRldRwp74DXxq2JEC7%2Bz%2BEZnaoqM880%2BoazPaJrcSrXexFD6wY3dkZ5MPbaENDk5tTS%2B%2FtaTxss8NmHUuKFFC1x2EfC%2F12TdGYYQ4K5oHRhJVhTTH3zHpIt8j%2FSBa54cS7yhFC4RJC2UajIh8%3D&amp;platformNo=6000005781&amp;keySerial=1</pre></td></tr><tr><td class="data key">Cookies</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr><tr><td class="data key">Request Headers</td><td class="data delimiter">:</td><td class="data"><pre class="data">Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 671
+Host: xwbk.lanmaoly.com
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_91)
+</pre></td></tr></table></div><div class="trail"></div><div class="group">Response</div><div class="zebra"><table><tr><td class="data key">Response Headers</td><td class="data delimiter">:</td><td class="data"><pre class="data">HTTP/1.1 302 
+Server: nginx/1.14.2
+Date: Fri, 01 Mar 2019 07:15:35 GMT
+Content-Length: 0
+Connection: keep-alive
+Location: https://xwbk.lanmaoly.com/bha-neo-app/gateway/desktop/recharge/index.html?requestKey=71918c66-9244-4742-803e-a7c0e4efe54e
+Content-Language: en-US
+</pre></td></tr><tr><td class="data key" style="word-wrap: break-word;">Response Data</td><td class="data delimiter">:</td><td class="data"><pre class="data">Non-TEXT response data, cannot record: ()</pre></td></tr><tr><td class="data key">Response File</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr></table></div><div class="trail"></div></div></li><li onclick="return onclick_li(this);"><div class="success">跳转到新网页面_01</div><div class="detail"><div class="group">Sampler</div><div class="zebra"><table><tr><td class="data key">Thread Name</td><td class="data delimiter">:</td><td class="data">新网充值 -- 完成 1-1</td></tr><tr><td class="data key">Timestamp</td><td class="data delimiter">:</td><td class="data"><span class="patch_timestamp">1551424588774</span></td></tr><tr><td class="data key">Time</td><td class="data delimiter">:</td><td class="data">410 ms</td></tr><tr><td class="data key">Latency</td><td class="data delimiter">:</td><td class="data">410 ms</td></tr><tr><td class="data key">Bytes</td><td class="data delimiter">:</td><td class="data">277</td></tr><tr><td class="data key">Sample Count</td><td class="data delimiter">:</td><td class="data">1</td></tr><tr><td class="data key">Error Count</td><td class="data delimiter">:</td><td class="data">0</td></tr><tr><td class="data key">Response Code</td><td class="data delimiter">:</td><td class="data">200</td></tr><tr><td class="data key">Response Message</td><td class="data delimiter">:</td><td class="data">Number of samples in transaction : 1, number of failing samples : 0</td></tr></table></div><div class="trail"></div><div class="group">Request</div><div class="zebra"><table><tr><td class="data key">Method/Url</td><td class="data delimiter">:</td><td class="data"><pre class="data"> </pre></td></tr><tr><td class="data key">Query String</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr><tr><td class="data key">Cookies</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr><tr><td class="data key">Request Headers</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr></table></div><div class="trail"></div><div class="group">Response</div><div class="zebra"><table><tr><td class="data key">Response Headers</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr><tr><td class="data key" style="word-wrap: break-word;">Response Data</td><td class="data delimiter">:</td><td class="data"><pre class="data">Non-TEXT response data, cannot record: ()</pre></td></tr><tr><td class="data key">Response File</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr></table></div><div class="trail"></div></div></li><li onclick="return onclick_li(this);"><div class="success">jp@gc - WebDriver Sampler</div><div class="detail"><div class="group">Sampler</div><div class="zebra"><table><tr><td class="data key">Thread Name</td><td class="data delimiter">:</td><td class="data">新网充值 -- 完成 1-1</td></tr><tr><td class="data key">Timestamp</td><td class="data delimiter">:</td><td class="data"><span class="patch_timestamp">1551424589645</span></td></tr><tr><td class="data key">Time</td><td class="data delimiter">:</td><td class="data">1618 ms</td></tr><tr><td class="data key">Latency</td><td class="data delimiter">:</td><td class="data">0 ms</td></tr><tr><td class="data key">Bytes</td><td class="data delimiter">:</td><td class="data">6590</td></tr><tr><td class="data key">Sample Count</td><td class="data delimiter">:</td><td class="data">1</td></tr><tr><td class="data key">Error Count</td><td class="data delimiter">:</td><td class="data">0</td></tr><tr><td class="data key">Response Code</td><td class="data delimiter">:</td><td class="data">200</td></tr><tr><td class="data key">Response Message</td><td class="data delimiter">:</td><td class="data">OK</td></tr></table></div><div class="trail"></div><div class="group">Request</div><div class="zebra"><table><tr><td class="data key">Method/Url</td><td class="data delimiter">:</td><td class="data"><pre class="data"> https://xwbk.lanmaoly.com/bha-neo-app/gateway/desktop/recharge/rechargeSwift.do</pre></td></tr><tr><td class="data key">Query String</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr><tr><td class="data key">Cookies</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr><tr><td class="data key">Request Headers</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr></table></div><div class="trail"></div><div class="group">Response</div><div class="zebra"><table><tr><td class="data key">Response Headers</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr><tr><td class="data key" style="word-wrap: break-word;">Response Data</td><td class="data delimiter">:</td><td class="data"><pre class="data">&lt;!DOCTYPE html&gt;&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;head&gt;
+
+
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+    &lt;meta http-equiv="pragma " content="no-cache " /&gt;
+    &lt;meta http-equiv="cache-control " content="no-cache " /&gt;
+    &lt;meta http-equiv="expires " content="0 " /&gt;
+    &lt;meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" /&gt;
+    &lt;title&gt;处理中&lt;/title&gt;
+    
+
+
+&lt;script src="/bha-neo-app/resource/jquery/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="/bha-neo-app/resource/validform/Validform_v16.js"&gt;&lt;/script&gt;
+
+  
+    
+    &lt;script type="text/javascript"&gt;
+        var second = 30;
+        var v = setInterval(function () {
+            $('.stop-watch').text(second + 's');
+            if (second == 27 || second == 20 || second == 10) { // 第3,10,20秒时查询一次
+                $.ajax({
+                    url: 'querySwiftResult',
+                    type: 'POST',
+                    dataType: 'json',
+                    data: {requestKey: '71918c66-9244-4742-803e-a7c0e4efe54e'},
+                    success: function (result) {
+                        // 只对明确的成功和失败进行处理
+                        if (result.status == 'SUCCESS') {
+                            $('#form').submit();
+                        } else if (result.status == 'FAIL') {
+                            clearInterval(v);
+                            $('.other').hide();
+                            $('.fail-msg').text(result.msg);
+                            $('#fail-code').text(result.errorCode);
+                            $('#fail-order').text(result.orderNo);
+                            $('.fail').show();
+                        } else if (result.status == 'TIME_RANGE') {
+                            clearInterval(v);
+                            $('.processingCon').hide();
+                            $('.notice').append(result.msg);
+                            $('.notice').show();
+                        }
+                    }
+                });
+            }
+            if (second == 0) {
+                clearInterval(v);
+                $('.processingCon').hide();
+                $('.timeout').show();
+            }
+            second--;
+        }, 1000);
+    &lt;/script&gt;
+
+
+    &lt;link rel="icon" href="/bha-neo-app/resource/images/favicon-XW.ico" mce_href="/resource/custom/favicon-XW.ico" type="image/x-icon" /&gt;
+    &lt;link rel="shortcut icon" href="/bha-neo-app/resource/images/favicon-XW.ico" mce_href="/resource/custom/favicon-XW.ico" type="image/x-icon" /&gt;
+    &lt;link type="text/css" href="/bha-neo-app/resource/css/jquery.areaopt.css" rel="stylesheet" /&gt;
+    &lt;link type="text/css" href="/bha-neo-app/resource/css/style_v16.css" rel="stylesheet" /&gt;
+
+    &lt;script type="text/javascript" src="/bha-neo-app/resource/js/jquery.areaopt.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="/bha-neo-app/resource/js/cfca-XW/CFCASIPInput.min.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="/bha-neo-app/resource/js/bha_v15.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="/bha-neo-app/resource/js/requestKey.js?v=2.0"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="/bha-neo-app/resource/js/areaopt.data.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="/bha-neo-app/resource/js/clipboard.min.js"&gt;&lt;/script&gt;
+    
+&lt;/head&gt;
+&lt;body&gt;
+
+
+    
+        &lt;div class="header"&gt;
+            &lt;div class="div-m"&gt;
+                    
+                &lt;h1 class="logo"&gt;
+                    &lt;a href="#" class="logoImg"&gt;
+                        &lt;img src="/bha-neo-app/resource/images/logo-XW.png" /&gt;
+                    &lt;/a&gt;
+                &lt;/h1&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    
+
+
+
+  
+&lt;div class="container" style="min-height: 735px;"&gt;
+    &lt;div class="infoBar"&gt;
+        &lt;div class="div-m"&gt;
+            &lt;span class="subtitle"&gt;处理中&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="div-m other" style="min-height: 583px;"&gt;
+        &lt;div class="formBlock"&gt;
+            &lt;div class="processingCon tc"&gt;
+                
+                    &lt;img src="/bha-neo-app/resource/images/loading-XW.gif" /&gt;
+                
+                耐心等待一下，还需 &lt;span class="blue stop-watch"&gt;30s&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class="processingCon tc timeout" style="display: none"&gt;
+                &lt;img src="/bha-neo-app/resource/images/alert.png" /&gt; 支付处理超时，请您联系平台核实该笔订单状态
+            &lt;/div&gt;
+            &lt;div class="paymentTips notice" style="display: none"&gt;
+                &lt;span class="icon-tips"&gt;&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="div-m fail" style="display: none; min-height: 583px;"&gt;
+        &lt;div class="errorCon"&gt;
+            &lt;div class="errorImg fl"&gt;&lt;/div&gt;
+            &lt;p class="errorTitle fail-msg"&gt;&lt;/p&gt;
+            &lt;p class="errorCode blue "&gt;错误码：&lt;span id="fail-code"&gt;&lt;/span&gt;&lt;/p&gt;
+            &lt;p class="errorCode blue "&gt;订单号：&lt;span id="fail-order"&gt;&lt;/span&gt;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;form action="swiftRechargeResult" method="post" id="form"&gt;&lt;input name="requestKey" id="requestKey" type="hidden" value="71918c66-9244-4742-803e-a7c0e4efe54e" /&gt;&lt;/form&gt;
+    &lt;div class="clear"&gt;&lt;/div&gt;
+    
+
+
+    &lt;div class="tips" style="color:#AAAAAA"&gt;温馨提示：新网银行不承担网贷平台的投融资标的物及投融资人的审核责任，不对网贷平台业务提供明示或默示的担保或连带责任，网贷平台的交易风险由投融资人自行承担，与新网银行无关。&lt;/div&gt;
+
+
+
+
+
+&lt;/div&gt;
+
+
+
+&lt;div id="__env__" style="visibility: collapse;"&gt;
+    &lt;input type="hidden" id="contextPath" name="contextPath" value="/bha-neo-app" /&gt;
+    &lt;input name="requestKey" id="requestKey" type="hidden" value="71918c66-9244-4742-803e-a7c0e4efe54e" /&gt;
+&lt;/div&gt;
+
+&lt;div class="footer"&gt;
+    &lt;p class="tc"&gt;
+        
+    &lt;/p&gt;
+&lt;/div&gt;
+&lt;div id="mask" style="display: none; height: 930px;"&gt;&lt;/div&gt;
+&lt;div id="alertLayer-2" style="display: none; width: 400px; height: 210px; left: 760px; top: 360px;"&gt;
+    &lt;div class="layerTit"&gt;提 示&lt;/div&gt;
+    &lt;div class="layerCtr"&gt;
+        &lt;div class="layerCon tc"&gt;&lt;/div&gt;
+        &lt;a href="javascript:void(0);" class="submitBtn submitBtn-2"&gt;我知道了&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;script src="/bha-neo-app/resource/js/my2.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script src="/bha-neo-app/resource/js/cfca-XW/cfcaEncrypt.js" type="text/javascript"&gt;&lt;/script&gt;
+
+
+
+&lt;/body&gt;&lt;/html&gt;</pre></td></tr><tr><td class="data key">Response File</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr></table></div><div class="trail"></div></div></li><li onclick="return onclick_li(this);"><div class="success">新网充值_02</div><div class="detail"><div class="group">Sampler</div><div class="zebra"><table><tr><td class="data key">Thread Name</td><td class="data delimiter">:</td><td class="data">新网充值 -- 完成 1-1</td></tr><tr><td class="data key">Timestamp</td><td class="data delimiter">:</td><td class="data"><span class="patch_timestamp">1551424589186</span></td></tr><tr><td class="data key">Time</td><td class="data delimiter">:</td><td class="data">1618 ms</td></tr><tr><td class="data key">Latency</td><td class="data delimiter">:</td><td class="data">0 ms</td></tr><tr><td class="data key">Bytes</td><td class="data delimiter">:</td><td class="data">6590</td></tr><tr><td class="data key">Sample Count</td><td class="data delimiter">:</td><td class="data">1</td></tr><tr><td class="data key">Error Count</td><td class="data delimiter">:</td><td class="data">0</td></tr><tr><td class="data key">Response Code</td><td class="data delimiter">:</td><td class="data">200</td></tr><tr><td class="data key">Response Message</td><td class="data delimiter">:</td><td class="data">Number of samples in transaction : 1, number of failing samples : 0</td></tr></table></div><div class="trail"></div><div class="group">Request</div><div class="zebra"><table><tr><td class="data key">Method/Url</td><td class="data delimiter">:</td><td class="data"><pre class="data"> </pre></td></tr><tr><td class="data key">Query String</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr><tr><td class="data key">Cookies</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr><tr><td class="data key">Request Headers</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr></table></div><div class="trail"></div><div class="group">Response</div><div class="zebra"><table><tr><td class="data key">Response Headers</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr><tr><td class="data key" style="word-wrap: break-word;">Response Data</td><td class="data delimiter">:</td><td class="data"><pre class="data">Non-TEXT response data, cannot record: ()</pre></td></tr><tr><td class="data key">Response File</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr></table></div><div class="trail"></div></div></li><li onclick="return onclick_li(this);"><div class="success">新网充值流程-总事务</div><div class="detail"><div class="group">Sampler</div><div class="zebra"><table><tr><td class="data key">Thread Name</td><td class="data delimiter">:</td><td class="data">新网充值 -- 完成 1-1</td></tr><tr><td class="data key">Timestamp</td><td class="data delimiter">:</td><td class="data"><span class="patch_timestamp">1551424588400</span></td></tr><tr><td class="data key">Time</td><td class="data delimiter">:</td><td class="data">2207 ms</td></tr><tr><td class="data key">Latency</td><td class="data delimiter">:</td><td class="data">589 ms</td></tr><tr><td class="data key">Bytes</td><td class="data delimiter">:</td><td class="data">8404</td></tr><tr><td class="data key">Sample Count</td><td class="data delimiter">:</td><td class="data">1</td></tr><tr><td class="data key">Error Count</td><td class="data delimiter">:</td><td class="data">0</td></tr><tr><td class="data key">Response Code</td><td class="data delimiter">:</td><td class="data">200</td></tr><tr><td class="data key">Response Message</td><td class="data delimiter">:</td><td class="data">Number of samples in transaction : 7, number of failing samples : 0</td></tr></table></div><div class="trail"></div><div class="group">Request</div><div class="zebra"><table><tr><td class="data key">Method/Url</td><td class="data delimiter">:</td><td class="data"><pre class="data"> </pre></td></tr><tr><td class="data key">Query String</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr><tr><td class="data key">Cookies</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr><tr><td class="data key">Request Headers</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr></table></div><div class="trail"></div><div class="group">Response</div><div class="zebra"><table><tr><td class="data key">Response Headers</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr><tr><td class="data key" style="word-wrap: break-word;">Response Data</td><td class="data delimiter">:</td><td class="data"><pre class="data">Non-TEXT response data, cannot record: ()</pre></td></tr><tr><td class="data key">Response File</td><td class="data delimiter">:</td><td class="data"><pre class="data"></pre></td></tr></table></div><div class="trail"></div></div></li></ol></div><div id="right-panel"></div></body></html>
