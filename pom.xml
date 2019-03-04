@@ -193,9 +193,9 @@
 								<filtering>true</filtering>
 							</resource>
 						</resources>
-					</configuration>
+					</configuration>				
 				</execution>
-			</executions>		
+			</executions>				
 		</plugin>	
 	<!-- 把resources文件夹下面的文件拷贝到jmeter/lib/ext目录下 -->
         <plugin>

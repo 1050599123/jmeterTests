@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testResults version="1.2">
-<httpSample t="120" it="0" lt="120" ct="26" ts="1551424588568" s="true" lb="HTTP请求" rc="200" rm="" tn="新网充值 -- 完成 1-1" dt="text" de="UTF-8" by="548" sby="487" sc="1" ec="0" ng="1" na="1" hn="hepeng">
+<httpSample t="136" it="0" lt="135" ct="27" ts="1551429470667" s="true" lb="HTTP请求" rc="200" rm="" tn="新网充值 -- 完成 1-1" dt="text" de="UTF-8" by="548" sby="487" sc="1" ec="0" ng="1" na="1" hn="hepeng">
   <responseHeader class="java.lang.String">HTTP/1.1 200 
 X-Application-Context: application:test1:8087
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: *
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Fri, 01 Mar 2019 07:15:35 GMT
+Date: Fri, 01 Mar 2019 08:36:57 GMT
 </responseHeader>
   <requestHeader class="java.lang.String">Connection: keep-alive
 Content-Type: application/x-www-form-urlencoded
@@ -15,27 +15,27 @@ Content-Length: 291
 Host: 47.107.239.121:8087
 User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_91)
 </requestHeader>
-  <responseData class="java.lang.String">{&quot;code&quot;:&quot;0000&quot;,&quot;message&quot;:&quot;成功&quot;,&quot;data&quot;:{&quot;userId&quot;:1100023960,&quot;userName&quot;:&quot;18655289109&quot;,&quot;sessionId&quot;:&quot;F6EA596E506EA9DECDFB7FA5AE1CA8FA&quot;,&quot;userRole&quot;:&quot;1&quot;,&quot;oldUserId&quot;:1100023960,&quot;activityTag&quot;:&quot;&quot;,&quot;isRealNameAuth&quot;:1,&quot;headImgUrl&quot;:&quot;&quot;,&quot;signkey&quot;:&quot;0961e730bb59533fe9b443829be95f37&quot;},&quot;timestamp&quot;:1551424535080}</responseData>
+  <responseData class="java.lang.String">{&quot;code&quot;:&quot;0000&quot;,&quot;message&quot;:&quot;成功&quot;,&quot;data&quot;:{&quot;userId&quot;:1100023960,&quot;userName&quot;:&quot;18655289109&quot;,&quot;sessionId&quot;:&quot;C0E59666D027034E7891625E2DC8719B&quot;,&quot;userRole&quot;:&quot;1&quot;,&quot;oldUserId&quot;:1100023960,&quot;activityTag&quot;:&quot;&quot;,&quot;isRealNameAuth&quot;:1,&quot;headImgUrl&quot;:&quot;&quot;,&quot;signkey&quot;:&quot;0961e730bb59533fe9b443829be95f37&quot;},&quot;timestamp&quot;:1551429417134}</responseData>
   <responseFile class="java.lang.String"></responseFile>
   <cookies class="java.lang.String"></cookies>
   <method class="java.lang.String">POST</method>
-  <queryString class="java.lang.String">method=user.login&amp;format=json&amp;appKey=00000001&amp;locate=cn&amp;v=1.0&amp;timestamp=2019-03-01+15%3A16%3A28&amp;bizContent=VgTVljW5eilgwhMGzZq0%2FZVWDtvT2KZ%2FFVY64zM%2BsVdQRMSrwQvfRvlzCQFRnnKr%2BRJl%2BndWPwgx3lywgInrOmmHYgRusrAOtT1lInieEyckIyejjkBsI0CaLue9hd9A&amp;sign=8FEE48F7551D39DBB610012F475EAA9F40F1FD5D</queryString>
+  <queryString class="java.lang.String">method=user.login&amp;format=json&amp;appKey=00000001&amp;locate=cn&amp;v=1.0&amp;timestamp=2019-03-01+16%3A37%3A50&amp;bizContent=VgTVljW5eilgwhMGzZq0%2FZVWDtvT2KZ%2FFVY64zM%2BsVdQRMSrwQvfRvlzCQFRnnKr%2BRJl%2BndWPwgx3lywgInrOmmHYgRusrAOtT1lInieEyckIyejjkBsI0CaLue9hd9A&amp;sign=B1BD10ED82183277924AAC867CCA849AEA479F57</queryString>
   <java.net.URL>http://47.107.239.121:8087/api</java.net.URL>
 </httpSample>
-<sample t="120" it="179" lt="120" ct="26" ts="1551424588400" s="true" lb="获取sessionID_01" rc="200" rm="Number of samples in transaction : 1, number of failing samples : 0" tn="新网充值 -- 完成 1-1" dt="" de="" by="548" sby="487" sc="1" ec="0" ng="1" na="1" hn="hepeng">
+<sample t="136" it="182" lt="135" ct="27" ts="1551429470496" s="true" lb="获取sessionID_01" rc="200" rm="Number of samples in transaction : 1, number of failing samples : 0" tn="新网充值 -- 完成 1-1" dt="" de="" by="548" sby="487" sc="1" ec="0" ng="1" na="1" hn="hepeng">
   <responseHeader class="java.lang.String"></responseHeader>
   <requestHeader class="java.lang.String"></requestHeader>
   <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
   <responseFile class="java.lang.String"></responseFile>
 </sample>
-<httpSample t="59" it="0" lt="59" ct="0" ts="1551424588704" s="true" lb="HTTP请求" rc="200" rm="" tn="新网充值 -- 完成 1-1" dt="text" de="UTF-8" by="989" sby="597" sc="1" ec="0" ng="1" na="1" hn="hepeng">
+<httpSample t="110" it="0" lt="110" ct="0" ts="1551429470819" s="true" lb="HTTP请求" rc="200" rm="" tn="新网充值 -- 完成 1-1" dt="text" de="UTF-8" by="989" sby="597" sc="1" ec="0" ng="1" na="1" hn="hepeng">
   <responseHeader class="java.lang.String">HTTP/1.1 200 
 X-Application-Context: application:test1:8087
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: *
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Fri, 01 Mar 2019 07:15:35 GMT
+Date: Fri, 01 Mar 2019 08:36:57 GMT
 </responseHeader>
   <requestHeader class="java.lang.String">Connection: keep-alive
 Content-Type: application/x-www-form-urlencoded
@@ -43,31 +43,31 @@ Content-Length: 401
 Host: 47.107.239.121:8087
 User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_91)
 </requestHeader>
-  <responseData class="java.lang.String">{&quot;code&quot;:&quot;0000&quot;,&quot;message&quot;:&quot;成功&quot;,&quot;data&quot;:{&quot;url&quot;:&quot;https://xwbk.lanmaoly.com/bha-neo-app/lanmaotech/gateway&quot;,&quot;xwParams&quot;:{&quot;serviceName&quot;:&quot;RECHARGE&quot;,&quot;reqData&quot;:&quot;{\&quot;amount\&quot;:33,\&quot;bankcode\&quot;:\&quot;BKCH\&quot;,\&quot;expectPayCompany\&quot;:\&quot;ALLINPAY\&quot;,\&quot;expired\&quot;:\&quot;20190301152535\&quot;,\&quot;platformUserNo\&quot;:\&quot;inve_1100023960_190227163243\&quot;,\&quot;rechargeWay\&quot;:\&quot;SWIFT\&quot;,\&quot;redirectUrl\&quot;:\&quot;https://test2bank.mindai.com/callback/recharge\&quot;,\&quot;requestNo\&quot;:\&quot;recharge_20190301151535140198\&quot;,\&quot;timestamp\&quot;:\&quot;20190301151535\&quot;}&quot;,&quot;sign&quot;:&quot;u8MlzGdmNPmwTq/vQ+d1KosHd3aRldRwp74DXxq2JEC7+z+EZnaoqM880+oazPaJrcSrXexFD6wY3dkZ5MPbaENDk5tTS+/taTxss8NmHUuKFFC1x2EfC/12TdGYYQ4K5oHRhJVhTTH3zHpIt8j/SBa54cS7yhFC4RJC2UajIh8=&quot;,&quot;platformNo&quot;:&quot;6000005781&quot;,&quot;keySerial&quot;:&quot;1&quot;}},&quot;timestamp&quot;:1551424535164}</responseData>
+  <responseData class="java.lang.String">{&quot;code&quot;:&quot;0000&quot;,&quot;message&quot;:&quot;成功&quot;,&quot;data&quot;:{&quot;url&quot;:&quot;https://xwbk.lanmaoly.com/bha-neo-app/lanmaotech/gateway&quot;,&quot;xwParams&quot;:{&quot;serviceName&quot;:&quot;RECHARGE&quot;,&quot;reqData&quot;:&quot;{\&quot;amount\&quot;:33,\&quot;bankcode\&quot;:\&quot;BKCH\&quot;,\&quot;expectPayCompany\&quot;:\&quot;ALLINPAY\&quot;,\&quot;expired\&quot;:\&quot;20190301164657\&quot;,\&quot;platformUserNo\&quot;:\&quot;inve_1100023960_190227163243\&quot;,\&quot;rechargeWay\&quot;:\&quot;SWIFT\&quot;,\&quot;redirectUrl\&quot;:\&quot;https://test2bank.mindai.com/callback/recharge\&quot;,\&quot;requestNo\&quot;:\&quot;recharge_20190301163657229210\&quot;,\&quot;timestamp\&quot;:\&quot;20190301163657\&quot;}&quot;,&quot;sign&quot;:&quot;vCpeXlPrK+px1Hjv6hyMSZCogzPuKei9awOqlS3HQnAtSu4NqGdB3jyfcY5DTK7EZvCz66AYFDKrEwEslJ6p55HEBjfPqKNk/N+dXCWd+o16jNewt1OHiqjxdcsg+X/j6ZvFbStY5OPNdBADq86DCh3rVIBxlkv3kHCb4yaOzD8=&quot;,&quot;platformNo&quot;:&quot;6000005781&quot;,&quot;keySerial&quot;:&quot;1&quot;}},&quot;timestamp&quot;:1551429417268}</responseData>
   <responseFile class="java.lang.String"></responseFile>
   <cookies class="java.lang.String"></cookies>
   <method class="java.lang.String">POST</method>
-  <queryString class="java.lang.String">method=user.xwRecharge&amp;format=json&amp;appKey=00000001&amp;locate=cn&amp;v=5.0.0&amp;sessionId=F6EA596E506EA9DECDFB7FA5AE1CA8FA&amp;timestamp=2019-03-01+15%3A16%3A28&amp;bizContent=emjRFY5tyeXleky8RfB1Tn0r%2F5g4pXtPBtXcTukXasnzMHArsUgQ4yFDfHnPGSikecpFOoh0gq9bE3jyzusj96ndwkup1l%2BAcWETCT2LfBMt2QCKtyykQSWuWcJnQldOCrucdQMjv5jBuys7dZ0kIa%2FMRuSnoVvoOzbmhst11Q05RCvHYtJm2UXSgdtce609&amp;sign=E4F2DF184987B1BFCF894D70F40160C603F0A11F</queryString>
+  <queryString class="java.lang.String">method=user.xwRecharge&amp;format=json&amp;appKey=00000001&amp;locate=cn&amp;v=5.0.0&amp;sessionId=C0E59666D027034E7891625E2DC8719B&amp;timestamp=2019-03-01+16%3A37%3A50&amp;bizContent=emjRFY5tyeXleky8RfB1Tn0r%2F5g4pXtPBtXcTukXasnzMHArsUgQ4yFDfHnPGSikecpFOoh0gq9bE3jyzusj96ndwkup1l%2BAcWETCT2LfBMt2QCKtyykQSWuWcJnQldOCrucdQMjv5jBuys7dZ0kIa%2FMRuSnoVvoOzbmhst11Q05RCvHYtJm2UXSgdtce609&amp;sign=F3985B7CE833DECB60BF1FE3DE0E6BB381F7901C</queryString>
   <java.net.URL>http://47.107.239.121:8087/api</java.net.URL>
 </httpSample>
-<sample t="59" it="15" lt="59" ct="0" ts="1551424588699" s="true" lb="点击充值按钮_02" rc="200" rm="Number of samples in transaction : 1, number of failing samples : 0" tn="新网充值 -- 完成 1-1" dt="" de="" by="989" sby="597" sc="1" ec="0" ng="1" na="1" hn="hepeng">
+<sample t="110" it="16" lt="110" ct="0" ts="1551429470814" s="true" lb="点击充值按钮_02" rc="200" rm="Number of samples in transaction : 1, number of failing samples : 0" tn="新网充值 -- 完成 1-1" dt="" de="" by="989" sby="597" sc="1" ec="0" ng="1" na="1" hn="hepeng">
   <responseHeader class="java.lang.String"></responseHeader>
   <requestHeader class="java.lang.String"></requestHeader>
   <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
   <responseFile class="java.lang.String"></responseFile>
 </sample>
-<httpSample t="410" it="0" lt="410" ct="317" ts="1551424588774" s="true" lb="跳转到新网充值页面" rc="302" rm="" tn="新网充值 -- 完成 1-1" dt="" de="" by="277" sby="892" sc="1" ec="0" ng="1" na="1" hn="hepeng">
+<httpSample t="426" it="0" lt="426" ct="334" ts="1551429470940" s="true" lb="跳转到新网充值页面" rc="302" rm="" tn="新网充值 -- 完成 1-1" dt="" de="" by="277" sby="886" sc="1" ec="0" ng="1" na="1" hn="hepeng">
   <responseHeader class="java.lang.String">HTTP/1.1 302 
 Server: nginx/1.14.2
-Date: Fri, 01 Mar 2019 07:15:35 GMT
+Date: Fri, 01 Mar 2019 08:36:57 GMT
 Content-Length: 0
 Connection: keep-alive
-Location: https://xwbk.lanmaoly.com/bha-neo-app/gateway/desktop/recharge/index.html?requestKey=71918c66-9244-4742-803e-a7c0e4efe54e
+Location: https://xwbk.lanmaoly.com/bha-neo-app/gateway/desktop/recharge/index.html?requestKey=7ae214cf-d1a7-4ef2-8194-2fabd1251f4e
 Content-Language: en-US
 </responseHeader>
   <requestHeader class="java.lang.String">Connection: keep-alive
 Content-Type: application/x-www-form-urlencoded
-Content-Length: 671
+Content-Length: 665
 Host: xwbk.lanmaoly.com
 User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_91)
 </requestHeader>
@@ -75,17 +75,17 @@ User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_91)
   <responseFile class="java.lang.String"></responseFile>
   <cookies class="java.lang.String"></cookies>
   <method class="java.lang.String">POST</method>
-  <queryString class="java.lang.String">serviceName=RECHARGE&amp;reqData=%7B%22amount%22%3A33%2C%22bankcode%22%3A%22BKCH%22%2C%22expectPayCompany%22%3A%22ALLINPAY%22%2C%22expired%22%3A%2220190301152535%22%2C%22platformUserNo%22%3A%22inve_1100023960_190227163243%22%2C%22rechargeWay%22%3A%22SWIFT%22%2C%22redirectUrl%22%3A%22https%3A%2F%2Ftest2bank.mindai.com%2Fcallback%2Frecharge%22%2C%22requestNo%22%3A%22recharge_20190301151535140198%22%2C%22timestamp%22%3A%2220190301151535%22%7D&amp;sign=u8MlzGdmNPmwTq%2FvQ%2Bd1KosHd3aRldRwp74DXxq2JEC7%2Bz%2BEZnaoqM880%2BoazPaJrcSrXexFD6wY3dkZ5MPbaENDk5tTS%2B%2FtaTxss8NmHUuKFFC1x2EfC%2F12TdGYYQ4K5oHRhJVhTTH3zHpIt8j%2FSBa54cS7yhFC4RJC2UajIh8%3D&amp;platformNo=6000005781&amp;keySerial=1</queryString>
-  <redirectLocation class="java.lang.String">https://xwbk.lanmaoly.com/bha-neo-app/gateway/desktop/recharge/index.html?requestKey=71918c66-9244-4742-803e-a7c0e4efe54e</redirectLocation>
+  <queryString class="java.lang.String">serviceName=RECHARGE&amp;reqData=%7B%22amount%22%3A33%2C%22bankcode%22%3A%22BKCH%22%2C%22expectPayCompany%22%3A%22ALLINPAY%22%2C%22expired%22%3A%2220190301164657%22%2C%22platformUserNo%22%3A%22inve_1100023960_190227163243%22%2C%22rechargeWay%22%3A%22SWIFT%22%2C%22redirectUrl%22%3A%22https%3A%2F%2Ftest2bank.mindai.com%2Fcallback%2Frecharge%22%2C%22requestNo%22%3A%22recharge_20190301163657229210%22%2C%22timestamp%22%3A%2220190301163657%22%7D&amp;sign=vCpeXlPrK%2Bpx1Hjv6hyMSZCogzPuKei9awOqlS3HQnAtSu4NqGdB3jyfcY5DTK7EZvCz66AYFDKrEwEslJ6p55HEBjfPqKNk%2FN%2BdXCWd%2Bo16jNewt1OHiqjxdcsg%2BX%2Fj6ZvFbStY5OPNdBADq86DCh3rVIBxlkv3kHCb4yaOzD8%3D&amp;platformNo=6000005781&amp;keySerial=1</queryString>
+  <redirectLocation class="java.lang.String">https://xwbk.lanmaoly.com/bha-neo-app/gateway/desktop/recharge/index.html?requestKey=7ae214cf-d1a7-4ef2-8194-2fabd1251f4e</redirectLocation>
   <java.net.URL>https://xwbk.lanmaoly.com/bha-neo-app/lanmaotech/gateway</java.net.URL>
 </httpSample>
-<sample t="410" it="2" lt="410" ct="317" ts="1551424588774" s="true" lb="跳转到新网页面_01" rc="200" rm="Number of samples in transaction : 1, number of failing samples : 0" tn="新网充值 -- 完成 1-1" dt="" de="" by="277" sby="892" sc="1" ec="0" ng="1" na="1" hn="hepeng">
+<sample t="426" it="3" lt="426" ct="334" ts="1551429470940" s="true" lb="跳转到新网页面_01" rc="200" rm="Number of samples in transaction : 1, number of failing samples : 0" tn="新网充值 -- 完成 1-1" dt="" de="" by="277" sby="886" sc="1" ec="0" ng="1" na="1" hn="hepeng">
   <responseHeader class="java.lang.String"></responseHeader>
   <requestHeader class="java.lang.String"></requestHeader>
   <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
   <responseFile class="java.lang.String"></responseFile>
 </sample>
-<sample t="1618" it="0" lt="0" ct="0" ts="1551424589645" s="true" lb="jp@gc - WebDriver Sampler" rc="200" rm="OK" tn="新网充值 -- 完成 1-1" dt="text" de="UTF-8" by="6590" sby="0" sc="1" ec="0" ng="1" na="1" hn="hepeng">
+<sample t="1672" it="0" lt="0" ct="0" ts="1551429471705" s="true" lb="jp@gc - WebDriver Sampler" rc="200" rm="OK" tn="新网充值 -- 完成 1-1" dt="text" de="UTF-8" by="6592" sby="0" sc="1" ec="0" ng="1" na="1" hn="hepeng">
   <responseHeader class="java.lang.String"></responseHeader>
   <requestHeader class="java.lang.String"></requestHeader>
   <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;head&gt;
@@ -117,7 +117,7 @@ User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_91)
                     url: &apos;querySwiftResult&apos;,
                     type: &apos;POST&apos;,
                     dataType: &apos;json&apos;,
-                    data: {requestKey: &apos;71918c66-9244-4742-803e-a7c0e4efe54e&apos;},
+                    data: {requestKey: &apos;7ae214cf-d1a7-4ef2-8194-2fabd1251f4e&apos;},
                     success: function (result) {
                         // 只对明确的成功和失败进行处理
                         if (result.status == &apos;SUCCESS&apos;) {
@@ -210,7 +210,7 @@ User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_91)
             &lt;p class=&quot;errorCode blue &quot;&gt;订单号：&lt;span id=&quot;fail-order&quot;&gt;&lt;/span&gt;&lt;/p&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-    &lt;form action=&quot;swiftRechargeResult&quot; method=&quot;post&quot; id=&quot;form&quot;&gt;&lt;input name=&quot;requestKey&quot; id=&quot;requestKey&quot; type=&quot;hidden&quot; value=&quot;71918c66-9244-4742-803e-a7c0e4efe54e&quot; /&gt;&lt;/form&gt;
+    &lt;form action=&quot;swiftRechargeResult&quot; method=&quot;post&quot; id=&quot;form&quot;&gt;&lt;input name=&quot;requestKey&quot; id=&quot;requestKey&quot; type=&quot;hidden&quot; value=&quot;7ae214cf-d1a7-4ef2-8194-2fabd1251f4e&quot; /&gt;&lt;/form&gt;
     &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
     
 
@@ -227,7 +227,7 @@ User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_91)
 
 &lt;div id=&quot;__env__&quot; style=&quot;visibility: collapse;&quot;&gt;
     &lt;input type=&quot;hidden&quot; id=&quot;contextPath&quot; name=&quot;contextPath&quot; value=&quot;/bha-neo-app&quot; /&gt;
-    &lt;input name=&quot;requestKey&quot; id=&quot;requestKey&quot; type=&quot;hidden&quot; value=&quot;71918c66-9244-4742-803e-a7c0e4efe54e&quot; /&gt;
+    &lt;input name=&quot;requestKey&quot; id=&quot;requestKey&quot; type=&quot;hidden&quot; value=&quot;7ae214cf-d1a7-4ef2-8194-2fabd1251f4e&quot; /&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;footer&quot;&gt;
@@ -236,7 +236,7 @@ User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_91)
     &lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&quot;mask&quot; style=&quot;display: none; height: 930px;&quot;&gt;&lt;/div&gt;
-&lt;div id=&quot;alertLayer-2&quot; style=&quot;display: none; width: 400px; height: 210px; left: 760px; top: 360px;&quot;&gt;
+&lt;div id=&quot;alertLayer-2&quot; style=&quot;display: none; width: 400px; height: 210px; left: 751.5px; top: 360px;&quot;&gt;
     &lt;div class=&quot;layerTit&quot;&gt;提 示&lt;/div&gt;
     &lt;div class=&quot;layerCtr&quot;&gt;
         &lt;div class=&quot;layerCon tc&quot;&gt;&lt;/div&gt;
@@ -250,16 +250,16 @@ User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_91)
 
 &lt;/body&gt;&lt;/html&gt;</responseData>
   <responseFile class="java.lang.String"></responseFile>
-  <samplerData class="java.lang.String">com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler@64188361</samplerData>
+  <samplerData class="java.lang.String">com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler@27605d91</samplerData>
   <java.net.URL>https://xwbk.lanmaoly.com/bha-neo-app/gateway/desktop/recharge/rechargeSwift.do</java.net.URL>
 </sample>
-<sample t="1618" it="479" lt="0" ct="0" ts="1551424589186" s="true" lb="新网充值_02" rc="200" rm="Number of samples in transaction : 1, number of failing samples : 0" tn="新网充值 -- 完成 1-1" dt="" de="" by="6590" sby="0" sc="1" ec="0" ng="1" na="1" hn="hepeng">
+<sample t="1672" it="363" lt="0" ct="0" ts="1551429471369" s="true" lb="新网充值_02" rc="200" rm="Number of samples in transaction : 1, number of failing samples : 0" tn="新网充值 -- 完成 1-1" dt="" de="" by="6592" sby="0" sc="1" ec="0" ng="1" na="1" hn="hepeng">
   <responseHeader class="java.lang.String"></responseHeader>
   <requestHeader class="java.lang.String"></requestHeader>
   <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
   <responseFile class="java.lang.String"></responseFile>
 </sample>
-<sample t="2207" it="676" lt="589" ct="343" ts="1551424588400" s="true" lb="新网充值流程-总事务" rc="200" rm="Number of samples in transaction : 7, number of failing samples : 0" tn="新网充值 -- 完成 1-1" dt="" de="" by="8404" sby="1976" sc="1" ec="0" ng="1" na="1" hn="hepeng">
+<sample t="2344" it="564" lt="671" ct="361" ts="1551429470496" s="true" lb="新网充值流程-总事务" rc="200" rm="Number of samples in transaction : 7, number of failing samples : 0" tn="新网充值 -- 完成 1-1" dt="" de="" by="8406" sby="1970" sc="1" ec="0" ng="1" na="1" hn="hepeng">
   <responseHeader class="java.lang.String"></responseHeader>
   <requestHeader class="java.lang.String"></requestHeader>
   <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>

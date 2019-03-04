@@ -1,78 +1,77 @@
-2019/03/01 15:16:23 INFO  - jmeter.util.JMeterUtils: Setting Locale to zh_CN 
-2019/03/01 15:16:23 INFO  - jmeter.JMeter: Loading system properties from: F:\admin\jmeterTests\target\jmeter\bin\system.properties 
-2019/03/01 15:16:23 INFO  - jmeter.JMeter: Copyright (c) 1998-2016 The Apache Software Foundation 
-2019/03/01 15:16:23 INFO  - jmeter.JMeter: Version 3.1 r1770033 
-2019/03/01 15:16:23 INFO  - jmeter.JMeter: java.version=1.8.0_91 
-2019/03/01 15:16:23 INFO  - jmeter.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM 
-2019/03/01 15:16:23 INFO  - jmeter.JMeter: os.name=Windows 7 
-2019/03/01 15:16:23 INFO  - jmeter.JMeter: os.arch=amd64 
-2019/03/01 15:16:23 INFO  - jmeter.JMeter: os.version=6.1 
-2019/03/01 15:16:23 INFO  - jmeter.JMeter: file.encoding=UTF8 
-2019/03/01 15:16:23 INFO  - jmeter.JMeter: Max memory     =514850816 
-2019/03/01 15:16:23 INFO  - jmeter.JMeter: Available Processors =4 
-2019/03/01 15:16:23 INFO  - jmeter.JMeter: Default Locale=中文 (中国) 
-2019/03/01 15:16:23 INFO  - jmeter.JMeter: JMeter  Locale=中文 (中国) 
-2019/03/01 15:16:23 INFO  - jmeter.JMeter: JMeterHome=F:\admin\jmeterTests\target\jmeter 
-2019/03/01 15:16:23 INFO  - jmeter.JMeter: user.dir  =F:\admin\jmeterTests\target\jmeter\bin 
-2019/03/01 15:16:23 INFO  - jmeter.JMeter: PWD       =F:\admin\jmeterTests\target\jmeter\bin 
-2019/03/01 15:16:23 INFO  - jmeter.JMeter: IP: 192.168.2.132 Name: hepeng FullName: hepeng 
-2019/03/01 15:16:23 INFO  - jmeter.services.FileServer: Default base='F:\admin\jmeterTests\target\jmeter\bin' 
-2019/03/01 15:16:23 INFO  - jmeter.services.FileServer: Set new base='F:\admin\jmeterTests\target\jmeter\testFiles' 
-2019/03/01 15:16:23 INFO  - jmeter.save.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2 
-2019/03/01 15:16:23 INFO  - jmeter.save.SaveService: Using SaveService properties file encoding UTF-8 
-2019/03/01 15:16:23 INFO  - jmeter.save.SaveService: Using SaveService properties version 3.1 
-2019/03/01 15:16:23 INFO  - jmeter.save.SaveService: All converter versions present and correct 
-2019/03/01 15:16:23 INFO  - jmeter.save.SaveService: Loading file: F:\admin\jmeterTests\target\jmeter\testFiles\对接新网接口.jmx 
-2019/03/01 15:16:24 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
-2019/03/01 15:16:24 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
-2019/03/01 15:16:24 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
-2019/03/01 15:16:24 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
-2019/03/01 15:16:24 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser 
-2019/03/01 15:16:24 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser 
-2019/03/01 15:16:24 INFO  - jmeter.samplers.SampleResult: Note: Sample TimeStamps are START times 
-2019/03/01 15:16:24 INFO  - jmeter.samplers.SampleResult: sampleresult.default.encoding is set to utf-8 
-2019/03/01 15:16:24 INFO  - jmeter.samplers.SampleResult: sampleresult.useNanoTime=true 
-2019/03/01 15:16:24 INFO  - jmeter.samplers.SampleResult: sampleresult.nanoThreadSleep=5000 
-2019/03/01 15:16:24 INFO  - jmeter.protocol.http.control.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_ 
-2019/03/01 15:16:24 INFO  - jmeter.JMeter: Creating summariser <summary> 
-2019/03/01 15:16:24 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
-2019/03/01 15:16:24 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
-2019/03/01 15:16:24 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
-2019/03/01 15:16:24 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must contain the string: '.functions.' 
-2019/03/01 15:16:24 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must not contain the string: '.gui.' 
-2019/03/01 15:16:24 INFO  - jmeter.testelement.TestPlan: add D:\apache-jmeter-3.1\apache-jmeter-3.1\lib\ext\mysql-connector-java-5.1.38-bin.jar to classpath 
-2019/03/01 15:16:24 INFO  - jmeter.testelement.TestPlan: add D:\apache-jmeter-3.1\apache-jmeter-3.1\lib\ext\json-20180813.jar to classpath 
-2019/03/01 15:16:24 INFO  - jmeter.testelement.TestPlan: add D:\apache-jmeter-3.1\apache-jmeter-3.1\lib\ext\test(2).jar to classpath 
-2019/03/01 15:16:24 INFO  - jmeter.testelement.TestPlan: add D:\apache-jmeter-3.1\apache-jmeter-3.1\lib\ext\mmd.jar to classpath 
-2019/03/01 15:16:24 INFO  - jmeter.JMeter: 正在运行的测试 (1551424584366) 
-2019/03/01 15:16:24 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : 新网充值 -- 完成 
-2019/03/01 15:16:24 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group 新网充值 -- 完成. 
-2019/03/01 15:16:24 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
-2019/03/01 15:16:24 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
-2019/03/01 15:16:24 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
-2019/03/01 15:16:24 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
-2019/03/01 15:16:24 INFO  - jmeter.threads.JMeterThread: Thread started: 新网充值 -- 完成 1-1 
-2019/03/01 15:16:28 INFO  - jmeter.protocol.http.sampler.HTTPHCAbstractImpl: Local host = hepeng 
-2019/03/01 15:16:28 INFO  - jmeter.protocol.http.sampler.HTTPHC4Impl: HTTP request retry count = 0 
-2019/03/01 15:16:28 INFO  - jmeter.util.BeanShellTestElement: reqData={"amount":33,"bankcode":"BKCH","expectPayCompany":"ALLINPAY","expired":"20190301152535","platformUserNo":"inve_1100023960_190227163243","rechargeWay":"SWIFT","redirectUrl":"https://test2bank.mindai.com/callback/recharge","requestNo":"recharge_20190301151535140198","timestamp":"20190301151535"} 
-2019/03/01 15:16:28 INFO  - jmeter.util.BeanShellTestElement: sign={"amount":33,"bankcode":"BKCH","expectPayCompany":"ALLINPAY","expired":"20190301152535","platformUserNo":"inve_1100023960_190227163243","rechargeWay":"SWIFT","redirectUrl":"https://test2bank.mindai.com/callback/recharge","requestNo":"recharge_20190301151535140198","timestamp":"20190301151535"} 
-2019/03/01 15:16:28 INFO  - jmeter.protocol.http.sampler.LazySchemeSocketFactory: Setting up HTTPS TrustAll Socket Factory 
-2019/03/01 15:16:28 INFO  - jmeter.util.JsseSSLManager: Using default SSL protocol: TLS 
-2019/03/01 15:16:28 INFO  - jmeter.util.JsseSSLManager: SSL session context: per-thread 
-2019/03/01 15:16:28 INFO  - jmeter.util.SSLManager: JmeterKeyStore Location:  type JKS 
-2019/03/01 15:16:28 INFO  - jmeter.util.SSLManager: KeyStore created OK 
-2019/03/01 15:16:28 WARN  - jmeter.util.SSLManager: Keystore file not found, loading empty keystore 
-2019/03/01 15:16:29 INFO  - jmeter.util.BeanShellTestElement: backtim:HTTP/1.1 302 
+2019/03/01 16:37:45 INFO  - jmeter.util.JMeterUtils: Setting Locale to zh_CN 
+2019/03/01 16:37:45 INFO  - jmeter.JMeter: Loading system properties from: F:\admin\jmeterTests\target\jmeter\bin\system.properties 
+2019/03/01 16:37:45 INFO  - jmeter.JMeter: Copyright (c) 1998-2016 The Apache Software Foundation 
+2019/03/01 16:37:45 INFO  - jmeter.JMeter: Version 3.1 r1770033 
+2019/03/01 16:37:45 INFO  - jmeter.JMeter: java.version=1.8.0_91 
+2019/03/01 16:37:45 INFO  - jmeter.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM 
+2019/03/01 16:37:45 INFO  - jmeter.JMeter: os.name=Windows 7 
+2019/03/01 16:37:45 INFO  - jmeter.JMeter: os.arch=amd64 
+2019/03/01 16:37:45 INFO  - jmeter.JMeter: os.version=6.1 
+2019/03/01 16:37:45 INFO  - jmeter.JMeter: file.encoding=UTF8 
+2019/03/01 16:37:45 INFO  - jmeter.JMeter: Max memory     =514850816 
+2019/03/01 16:37:45 INFO  - jmeter.JMeter: Available Processors =4 
+2019/03/01 16:37:45 INFO  - jmeter.JMeter: Default Locale=中文 (中国) 
+2019/03/01 16:37:45 INFO  - jmeter.JMeter: JMeter  Locale=中文 (中国) 
+2019/03/01 16:37:45 INFO  - jmeter.JMeter: JMeterHome=F:\admin\jmeterTests\target\jmeter 
+2019/03/01 16:37:45 INFO  - jmeter.JMeter: user.dir  =F:\admin\jmeterTests\target\jmeter\bin 
+2019/03/01 16:37:45 INFO  - jmeter.JMeter: PWD       =F:\admin\jmeterTests\target\jmeter\bin 
+2019/03/01 16:37:45 INFO  - jmeter.JMeter: IP: 192.168.2.132 Name: hepeng FullName: hepeng 
+2019/03/01 16:37:45 INFO  - jmeter.services.FileServer: Default base='F:\admin\jmeterTests\target\jmeter\bin' 
+2019/03/01 16:37:45 INFO  - jmeter.services.FileServer: Set new base='F:\admin\jmeterTests\target\jmeter\testFiles' 
+2019/03/01 16:37:45 INFO  - jmeter.save.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2 
+2019/03/01 16:37:45 INFO  - jmeter.save.SaveService: Using SaveService properties file encoding UTF-8 
+2019/03/01 16:37:45 INFO  - jmeter.save.SaveService: Using SaveService properties version 3.1 
+2019/03/01 16:37:45 INFO  - jmeter.save.SaveService: All converter versions present and correct 
+2019/03/01 16:37:45 INFO  - jmeter.save.SaveService: Loading file: F:\admin\jmeterTests\target\jmeter\testFiles\对接新网接口.jmx 
+2019/03/01 16:37:45 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2019/03/01 16:37:45 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2019/03/01 16:37:45 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2019/03/01 16:37:45 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2019/03/01 16:37:45 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser 
+2019/03/01 16:37:45 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser 
+2019/03/01 16:37:45 INFO  - jmeter.samplers.SampleResult: Note: Sample TimeStamps are START times 
+2019/03/01 16:37:45 INFO  - jmeter.samplers.SampleResult: sampleresult.default.encoding is set to utf-8 
+2019/03/01 16:37:45 INFO  - jmeter.samplers.SampleResult: sampleresult.useNanoTime=true 
+2019/03/01 16:37:45 INFO  - jmeter.samplers.SampleResult: sampleresult.nanoThreadSleep=5000 
+2019/03/01 16:37:45 INFO  - jmeter.protocol.http.control.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_ 
+2019/03/01 16:37:45 INFO  - jmeter.JMeter: Creating summariser <summary> 
+2019/03/01 16:37:45 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2019/03/01 16:37:45 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2019/03/01 16:37:45 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2019/03/01 16:37:45 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must contain the string: '.functions.' 
+2019/03/01 16:37:45 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must not contain the string: '.gui.' 
+2019/03/01 16:37:46 INFO  - jmeter.testelement.TestPlan: add D:\apache-jmeter-3.1\apache-jmeter-3.1\lib\ext\mysql-connector-java-5.1.38-bin.jar to classpath 
+2019/03/01 16:37:46 INFO  - jmeter.testelement.TestPlan: add D:\apache-jmeter-3.1\apache-jmeter-3.1\lib\ext\json-20180813.jar to classpath 
+2019/03/01 16:37:46 INFO  - jmeter.testelement.TestPlan: add D:\apache-jmeter-3.1\apache-jmeter-3.1\lib\ext\test(2).jar to classpath 
+2019/03/01 16:37:46 INFO  - jmeter.testelement.TestPlan: add D:\apache-jmeter-3.1\apache-jmeter-3.1\lib\ext\mmd.jar to classpath 
+2019/03/01 16:37:46 INFO  - jmeter.JMeter: 正在运行的测试 (1551429466125) 
+2019/03/01 16:37:46 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : 新网充值 -- 完成 
+2019/03/01 16:37:46 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group 新网充值 -- 完成. 
+2019/03/01 16:37:46 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2019/03/01 16:37:46 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2019/03/01 16:37:46 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2019/03/01 16:37:46 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2019/03/01 16:37:46 INFO  - jmeter.threads.JMeterThread: Thread started: 新网充值 -- 完成 1-1 
+2019/03/01 16:37:50 INFO  - jmeter.protocol.http.sampler.HTTPHCAbstractImpl: Local host = hepeng 
+2019/03/01 16:37:50 INFO  - jmeter.protocol.http.sampler.HTTPHC4Impl: HTTP request retry count = 0 
+2019/03/01 16:37:50 INFO  - jmeter.util.BeanShellTestElement: reqData={"amount":33,"bankcode":"BKCH","expectPayCompany":"ALLINPAY","expired":"20190301164657","platformUserNo":"inve_1100023960_190227163243","rechargeWay":"SWIFT","redirectUrl":"https://test2bank.mindai.com/callback/recharge","requestNo":"recharge_20190301163657229210","timestamp":"20190301163657"} 
+2019/03/01 16:37:50 INFO  - jmeter.util.BeanShellTestElement: sign={"amount":33,"bankcode":"BKCH","expectPayCompany":"ALLINPAY","expired":"20190301164657","platformUserNo":"inve_1100023960_190227163243","rechargeWay":"SWIFT","redirectUrl":"https://test2bank.mindai.com/callback/recharge","requestNo":"recharge_20190301163657229210","timestamp":"20190301163657"} 
+2019/03/01 16:37:50 INFO  - jmeter.protocol.http.sampler.LazySchemeSocketFactory: Setting up HTTPS TrustAll Socket Factory 
+2019/03/01 16:37:50 INFO  - jmeter.util.JsseSSLManager: Using default SSL protocol: TLS 
+2019/03/01 16:37:50 INFO  - jmeter.util.JsseSSLManager: SSL session context: per-thread 
+2019/03/01 16:37:50 INFO  - jmeter.util.SSLManager: JmeterKeyStore Location:  type JKS 
+2019/03/01 16:37:50 INFO  - jmeter.util.SSLManager: KeyStore created OK 
+2019/03/01 16:37:50 WARN  - jmeter.util.SSLManager: Keystore file not found, loading empty keystore 
+2019/03/01 16:37:51 INFO  - jmeter.util.BeanShellTestElement: backtim:HTTP/1.1 302 
 Server: nginx/1.14.2
-Date: Fri, 01 Mar 2019 07:15:35 GMT
+Date: Fri, 01 Mar 2019 08:36:57 GMT
 Content-Length: 0
 Connection: keep-alive
-Location: https://xwbk.lanmaoly.com/bha-neo-app/gateway/desktop/recharge/index.html?requestKey=71918c66-9244-4742-803e-a7c0e4efe54e
+Location: https://xwbk.lanmaoly.com/bha-neo-app/gateway/desktop/recharge/index.html?requestKey=7ae214cf-d1a7-4ef2-8194-2fabd1251f4e
 Content-Language: en-US
  
-2019/03/01 15:16:29 INFO  - jmeter.util.BeanShellTestElement: URL: https://xwbk.lanmaoly.com/bha-neo-app/gateway/desktop/recharge/index.html?requestKey=71918c66-9244-4742-803e-a7c0e4efe54e 
-2019/03/01 15:16:31 INFO  - jmeter.reporters.Summariser: summary +      4 in 00:00:07 =    0.6/s Avg:   551 Min:    59 Max:  1618 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0 
-2019/03/01 15:16:31 INFO  - jmeter.threads.JMeterThread: Thread is done: 新网充值 -- 完成 1-1 
-2019/03/01 15:16:31 INFO  - jmeter.threads.JMeterThread: Thread finished: 新网充值 -- 完成 1-1 
-2019/03/01 15:16:32 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
-2019/03/01 15:16:32 INFO  - jmeter.reporters.Summariser: summary =      4 in 00:00:08 =    0.5/s Avg:   551 Min:    59 Max:  1618 Err:     0 (0.00%) 
+2019/03/01 16:37:51 INFO  - jmeter.util.BeanShellTestElement: URL: https://xwbk.lanmaoly.com/bha-neo-app/gateway/desktop/recharge/index.html?requestKey=7ae214cf-d1a7-4ef2-8194-2fabd1251f4e 
+2019/03/01 16:37:53 INFO  - jmeter.threads.JMeterThread: Thread is done: 新网充值 -- 完成 1-1 
+2019/03/01 16:37:53 INFO  - jmeter.threads.JMeterThread: Thread finished: 新网充值 -- 完成 1-1 
+2019/03/01 16:37:54 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2019/03/01 16:37:54 INFO  - jmeter.reporters.Summariser: summary =      4 in 00:00:09 =    0.5/s Avg:   586 Min:   110 Max:  1672 Err:     0 (0.00%) 
