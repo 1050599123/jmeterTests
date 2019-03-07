@@ -8,7 +8,7 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
-      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+      <stringProp name="TestPlan.user_define_classpath">D:\apache-jmeter-3.1\apache-jmeter-3.1\lib\ext\mysql-connector-java-5.1.38-bin.jar,D:\apache-jmeter-3.1\apache-jmeter-3.1\lib\ext\json-20180813.jar,D:\apache-jmeter-3.1\apache-jmeter-3.1\lib\ext\mmd.jar</stringProp>
     </TestPlan>
     <hashTree>
       <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="接口封装公共参数" enabled="true">
