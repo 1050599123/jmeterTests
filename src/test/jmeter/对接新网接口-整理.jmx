@@ -38,6 +38,16 @@
             <stringProp name="Argument.value">http://192.168.1.149:9001/my.html</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="serverip" elementType="Argument">
+            <stringProp name="Argument.name">serverip</stringProp>
+            <stringProp name="Argument.value">172.18.50.3 </stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="hdserverip" elementType="Argument">
+            <stringProp name="Argument.name">hdserverip</stringProp>
+            <stringProp name="Argument.value">47.107.239.116</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
         </collectionProp>
       </Arguments>
       <hashTree/>
@@ -134,7 +144,7 @@
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">47.107.239.121</stringProp>
+          <stringProp name="HTTPSampler.domain">${serverip}</stringProp>
           <stringProp name="HTTPSampler.port">8087</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -315,7 +325,7 @@ vars.put(&quot;v&quot;,v.toString());
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">47.107.239.121</stringProp>
+          <stringProp name="HTTPSampler.domain">${serverip}</stringProp>
           <stringProp name="HTTPSampler.port">8087</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -496,7 +506,7 @@ vars.put(&quot;v&quot;,v.toString());
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">47.107.239.121</stringProp>
+          <stringProp name="HTTPSampler.domain">${serverip}</stringProp>
           <stringProp name="HTTPSampler.port">8087</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -677,7 +687,7 @@ vars.put(&quot;v&quot;,v.toString());
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">47.107.239.121</stringProp>
+          <stringProp name="HTTPSampler.domain">${serverip}</stringProp>
           <stringProp name="HTTPSampler.port">8087</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -865,7 +875,7 @@ vars.put(&quot;v&quot;,v.toString());
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">47.107.239.121</stringProp>
+          <stringProp name="HTTPSampler.domain">${serverip}</stringProp>
           <stringProp name="HTTPSampler.port">8087</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -975,7 +985,7 @@ vars.put(&quot;v&quot;,v.toString());
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="根据场景获取banner信息banner信息" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="根据场景获取banner信息banner信息" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="method" elementType="HTTPArgument">
@@ -1043,8 +1053,8 @@ vars.put(&quot;v&quot;,v.toString());
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">test2api.mindai.com</stringProp>
-          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.domain">${hdserverip}</stringProp>
+          <stringProp name="HTTPSampler.port">9015</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1138,7 +1148,7 @@ vars.put(&quot;v&quot;,v.toString());
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="获取新网银行绑定的银行卡信息" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="获取新网银行绑定的银行卡信息" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="method" elementType="HTTPArgument">
@@ -1206,7 +1216,7 @@ vars.put(&quot;v&quot;,v.toString());
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">test2api.mindai.com</stringProp>
+          <stringProp name="HTTPSampler.domain">${hdserverip}</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -1357,7 +1367,7 @@ vars.put(&quot;v&quot;,v.toString());
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">47.107.239.121</stringProp>
+          <stringProp name="HTTPSampler.domain">${serverip}</stringProp>
           <stringProp name="HTTPSampler.port">8087</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -1529,7 +1539,7 @@ vars.put(&quot;v&quot;,v.toString());
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">47.107.239.121</stringProp>
+          <stringProp name="HTTPSampler.domain">${serverip}</stringProp>
           <stringProp name="HTTPSampler.port">8087</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -1699,7 +1709,7 @@ vars.put(&quot;v&quot;,v.toString());
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">47.107.239.121</stringProp>
+          <stringProp name="HTTPSampler.domain">${serverip}</stringProp>
           <stringProp name="HTTPSampler.port">8087</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -1866,7 +1876,7 @@ vars.put(&quot;v&quot;,v.toString());
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">47.107.239.121</stringProp>
+          <stringProp name="HTTPSampler.domain">${serverip}</stringProp>
           <stringProp name="HTTPSampler.port">8087</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -2019,7 +2029,7 @@ vars.put(&quot;v&quot;,v.toString());
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">47.107.239.121</stringProp>
+          <stringProp name="HTTPSampler.domain">${serverip}</stringProp>
           <stringProp name="HTTPSampler.port">8087</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -2172,7 +2182,7 @@ vars.put(&quot;v&quot;,v.toString());
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">47.107.239.121</stringProp>
+          <stringProp name="HTTPSampler.domain">${serverip}</stringProp>
           <stringProp name="HTTPSampler.port">8087</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -2325,7 +2335,7 @@ vars.put(&quot;v&quot;,v.toString());
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">47.107.239.121</stringProp>
+          <stringProp name="HTTPSampler.domain">${serverip}</stringProp>
           <stringProp name="HTTPSampler.port">8087</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -2504,7 +2514,7 @@ vars.put(&quot;v&quot;,v.toString());
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">47.107.239.121</stringProp>
+          <stringProp name="HTTPSampler.domain">${serverip}</stringProp>
           <stringProp name="HTTPSampler.port">8087</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -2652,7 +2662,7 @@ vars.put(&quot;v&quot;,v.toString());
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">47.107.239.121</stringProp>
+          <stringProp name="HTTPSampler.domain">${serverip}</stringProp>
           <stringProp name="HTTPSampler.port">8087</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -2800,7 +2810,7 @@ vars.put(&quot;v&quot;,v.toString());
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">47.107.239.121</stringProp>
+          <stringProp name="HTTPSampler.domain">${serverip}</stringProp>
           <stringProp name="HTTPSampler.port">8087</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -2953,7 +2963,7 @@ vars.put(&quot;v&quot;,v.toString());
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">47.107.239.121</stringProp>
+          <stringProp name="HTTPSampler.domain">${serverip}</stringProp>
           <stringProp name="HTTPSampler.port">8087</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -3145,7 +3155,7 @@ vars.put(&quot;v&quot;,v.toString());
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">47.107.239.121</stringProp>
+          <stringProp name="HTTPSampler.domain">${serverip}</stringProp>
           <stringProp name="HTTPSampler.port">8087</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -3294,7 +3304,7 @@ vars.put(&quot;v&quot;,v.toString());
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">47.107.239.121</stringProp>
+          <stringProp name="HTTPSampler.domain">${serverip}</stringProp>
           <stringProp name="HTTPSampler.port">8087</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -3444,7 +3454,7 @@ vars.put(&quot;v&quot;,v.toString());
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">47.107.239.121</stringProp>
+          <stringProp name="HTTPSampler.domain">${serverip}</stringProp>
           <stringProp name="HTTPSampler.port">8087</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -3598,7 +3608,7 @@ vars.put(&quot;v&quot;,v.toString());
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">47.107.239.121</stringProp>
+          <stringProp name="HTTPSampler.domain">${serverip}</stringProp>
           <stringProp name="HTTPSampler.port">8087</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -3748,7 +3758,7 @@ vars.put(&quot;v&quot;,v.toString());
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">47.107.239.121</stringProp>
+          <stringProp name="HTTPSampler.domain">${serverip}</stringProp>
           <stringProp name="HTTPSampler.port">8087</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -3903,7 +3913,7 @@ vars.put(&quot;v&quot;,v.toString());
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">47.107.239.121</stringProp>
+          <stringProp name="HTTPSampler.domain">${serverip}</stringProp>
           <stringProp name="HTTPSampler.port">8087</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -4054,7 +4064,7 @@ vars.put(&quot;v&quot;,v.toString());
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">47.107.239.121</stringProp>
+          <stringProp name="HTTPSampler.domain">${serverip}</stringProp>
           <stringProp name="HTTPSampler.port">8087</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -4205,7 +4215,7 @@ vars.put(&quot;v&quot;,v.toString());
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">47.107.239.121</stringProp>
+          <stringProp name="HTTPSampler.domain">${serverip}</stringProp>
           <stringProp name="HTTPSampler.port">8087</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -4360,7 +4370,7 @@ vars.put(&quot;v&quot;,v.toString());
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">47.107.239.121</stringProp>
+          <stringProp name="HTTPSampler.domain">${serverip}</stringProp>
           <stringProp name="HTTPSampler.port">8087</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -4514,7 +4524,7 @@ vars.put(&quot;v&quot;,v.toString());
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">47.107.239.121</stringProp>
+          <stringProp name="HTTPSampler.domain">${serverip}</stringProp>
           <stringProp name="HTTPSampler.port">8087</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -4665,7 +4675,7 @@ vars.put(&quot;v&quot;,v.toString());
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">47.107.239.121</stringProp>
+          <stringProp name="HTTPSampler.domain">${serverip}</stringProp>
           <stringProp name="HTTPSampler.port">8087</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -4817,7 +4827,7 @@ vars.put(&quot;v&quot;,v.toString());
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">47.107.239.121</stringProp>
+          <stringProp name="HTTPSampler.domain">${serverip}</stringProp>
           <stringProp name="HTTPSampler.port">8087</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -4972,7 +4982,7 @@ vars.put(&quot;v&quot;,v.toString());
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">47.107.239.121</stringProp>
+          <stringProp name="HTTPSampler.domain">${serverip}</stringProp>
           <stringProp name="HTTPSampler.port">8087</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -5125,7 +5135,7 @@ vars.put(&quot;v&quot;,v.toString());
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">47.107.239.121</stringProp>
+          <stringProp name="HTTPSampler.domain">${serverip}</stringProp>
           <stringProp name="HTTPSampler.port">8087</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
