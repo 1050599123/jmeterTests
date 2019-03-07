@@ -1,86 +1,86 @@
-2019/03/06 18:38:43 INFO  - jmeter.util.JMeterUtils: Setting Locale to zh_CN 
-2019/03/06 18:38:44 INFO  - jmeter.JMeter: Loading system properties from: F:\admin\jmeterTests\target\jmeter\bin\system.properties 
-2019/03/06 18:38:44 INFO  - jmeter.JMeter: Copyright (c) 1998-2016 The Apache Software Foundation 
-2019/03/06 18:38:44 INFO  - jmeter.JMeter: Version 3.1 r1770033 
-2019/03/06 18:38:44 INFO  - jmeter.JMeter: java.version=1.8.0_91 
-2019/03/06 18:38:44 INFO  - jmeter.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM 
-2019/03/06 18:38:44 INFO  - jmeter.JMeter: os.name=Windows 7 
-2019/03/06 18:38:44 INFO  - jmeter.JMeter: os.arch=amd64 
-2019/03/06 18:38:44 INFO  - jmeter.JMeter: os.version=6.1 
-2019/03/06 18:38:44 INFO  - jmeter.JMeter: file.encoding=UTF8 
-2019/03/06 18:38:44 INFO  - jmeter.JMeter: Max memory     =514850816 
-2019/03/06 18:38:44 INFO  - jmeter.JMeter: Available Processors =4 
-2019/03/06 18:38:44 INFO  - jmeter.JMeter: Default Locale=中文 (中国) 
-2019/03/06 18:38:44 INFO  - jmeter.JMeter: JMeter  Locale=中文 (中国) 
-2019/03/06 18:38:44 INFO  - jmeter.JMeter: JMeterHome=F:\admin\jmeterTests\target\jmeter 
-2019/03/06 18:38:44 INFO  - jmeter.JMeter: user.dir  =F:\admin\jmeterTests\target\jmeter\bin 
-2019/03/06 18:38:44 INFO  - jmeter.JMeter: PWD       =F:\admin\jmeterTests\target\jmeter\bin 
-2019/03/06 18:38:44 INFO  - jmeter.JMeter: IP: 192.168.3.69 Name: hepeng FullName: hepeng 
-2019/03/06 18:38:44 INFO  - jmeter.services.FileServer: Default base='F:\admin\jmeterTests\target\jmeter\bin' 
-2019/03/06 18:38:44 INFO  - jmeter.services.FileServer: Set new base='F:\admin\jmeterTests\target\jmeter\testFiles' 
-2019/03/06 18:38:44 INFO  - jmeter.save.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2 
-2019/03/06 18:38:44 INFO  - jmeter.save.SaveService: Using SaveService properties file encoding UTF-8 
-2019/03/06 18:38:44 INFO  - jmeter.save.SaveService: Using SaveService properties version 3.1 
-2019/03/06 18:38:44 INFO  - jmeter.save.SaveService: All converter versions present and correct 
-2019/03/06 18:38:44 INFO  - jmeter.save.SaveService: Loading file: F:\admin\jmeterTests\target\jmeter\testFiles\接口自动化.jmx 
-2019/03/06 18:38:44 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
-2019/03/06 18:38:44 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
-2019/03/06 18:38:44 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
-2019/03/06 18:38:44 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
-2019/03/06 18:38:44 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser 
-2019/03/06 18:38:44 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser 
-2019/03/06 18:38:44 INFO  - jmeter.JMeter: Creating summariser <summary> 
-2019/03/06 18:38:45 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
-2019/03/06 18:38:45 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
-2019/03/06 18:38:45 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
-2019/03/06 18:38:45 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must contain the string: '.functions.' 
-2019/03/06 18:38:45 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must not contain the string: '.gui.' 
-2019/03/06 18:38:45 INFO  - jmeter.testelement.TestPlan: add F:\apache-jmeter-2.9\apache-jmeter-2.9\lib\ext\test.jar to classpath 
-2019/03/06 18:38:45 INFO  - jmeter.JMeter: 正在运行的测试 (1551868725324) 
-2019/03/06 18:38:45 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : 营销活动 
-2019/03/06 18:38:45 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group 营销活动. 
-2019/03/06 18:38:45 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
-2019/03/06 18:38:45 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
-2019/03/06 18:38:45 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
-2019/03/06 18:38:45 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 2 : 投资相关 
-2019/03/06 18:38:45 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group 投资相关. 
-2019/03/06 18:38:45 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
-2019/03/06 18:38:45 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 2 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
-2019/03/06 18:38:45 INFO  - jmeter.threads.JMeterThread: Thread started: 营销活动 1-1 
-2019/03/06 18:38:45 INFO  - jmeter.threads.ThreadGroup: Started thread group number 2 
-2019/03/06 18:38:45 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 3 : 网贷天眼 
-2019/03/06 18:38:45 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group 网贷天眼. 
-2019/03/06 18:38:45 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
-2019/03/06 18:38:45 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 3 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
-2019/03/06 18:38:45 INFO  - jmeter.threads.JMeterThread: Thread started: 投资相关 2-1 
-2019/03/06 18:38:45 INFO  - jmeter.threads.ThreadGroup: Started thread group number 3 
-2019/03/06 18:38:45 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 4 : 网贷之家 
-2019/03/06 18:38:45 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group 网贷之家. 
-2019/03/06 18:38:45 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
-2019/03/06 18:38:45 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 4 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
-2019/03/06 18:38:45 INFO  - jmeter.threads.JMeterThread: Thread started: 网贷天眼 3-1 
-2019/03/06 18:38:45 INFO  - jmeter.threads.ThreadGroup: Started thread group number 4 
-2019/03/06 18:38:45 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
-2019/03/06 18:38:45 INFO  - jmeter.threads.JMeterThread: Thread started: 网贷之家 4-1 
-2019/03/06 18:38:45 INFO  - jmeter.protocol.http.sampler.HTTPHCAbstractImpl: Local host = hepeng 
-2019/03/06 18:38:45 INFO  - jmeter.protocol.http.sampler.HTTPHC4Impl: HTTP request retry count = 0 
-2019/03/06 18:38:45 INFO  - jmeter.samplers.SampleResult: Note: Sample TimeStamps are START times 
-2019/03/06 18:38:45 INFO  - jmeter.samplers.SampleResult: sampleresult.default.encoding is set to utf-8 
-2019/03/06 18:38:45 INFO  - jmeter.samplers.SampleResult: sampleresult.useNanoTime=true 
-2019/03/06 18:38:45 INFO  - jmeter.samplers.SampleResult: sampleresult.nanoThreadSleep=5000 
-2019/03/06 18:38:45 INFO  - jmeter.protocol.http.sampler.LazySchemeSocketFactory: Setting up HTTPS TrustAll Socket Factory 
-2019/03/06 18:38:45 INFO  - jmeter.util.JsseSSLManager: Using default SSL protocol: TLS 
-2019/03/06 18:38:45 INFO  - jmeter.util.JsseSSLManager: SSL session context: per-thread 
-2019/03/06 18:38:46 INFO  - jmeter.util.SSLManager: JmeterKeyStore Location:  type JKS 
-2019/03/06 18:38:46 INFO  - jmeter.util.SSLManager: KeyStore created OK 
-2019/03/06 18:38:46 WARN  - jmeter.util.SSLManager: Keystore file not found, loading empty keystore 
-2019/03/06 18:38:46 INFO  - jmeter.threads.JMeterThread: Thread is done: 网贷之家 4-1 
-2019/03/06 18:38:46 INFO  - jmeter.threads.JMeterThread: Thread finished: 网贷之家 4-1 
-2019/03/06 18:38:46 INFO  - jmeter.threads.JMeterThread: Thread is done: 网贷天眼 3-1 
-2019/03/06 18:38:46 INFO  - jmeter.threads.JMeterThread: Thread finished: 网贷天眼 3-1 
-2019/03/06 18:38:48 INFO  - jmeter.threads.JMeterThread: Thread is done: 营销活动 1-1 
-2019/03/06 18:38:48 INFO  - jmeter.threads.JMeterThread: Thread finished: 营销活动 1-1 
-2019/03/06 18:38:50 INFO  - jmeter.threads.JMeterThread: Thread is done: 投资相关 2-1 
-2019/03/06 18:38:50 INFO  - jmeter.threads.JMeterThread: Thread finished: 投资相关 2-1 
-2019/03/06 18:38:50 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
-2019/03/06 18:38:50 INFO  - jmeter.reporters.Summariser: summary =     21 in 00:00:05 =    4.4/s Avg:   474 Min:    65 Max:  1473 Err:     0 (0.00%) 
+2019/03/07 15:52:51 INFO  - jmeter.util.JMeterUtils: Setting Locale to zh_CN 
+2019/03/07 15:52:51 INFO  - jmeter.JMeter: Loading system properties from: F:\admin\jmeterTests\target\jmeter\bin\system.properties 
+2019/03/07 15:52:51 INFO  - jmeter.JMeter: Copyright (c) 1998-2016 The Apache Software Foundation 
+2019/03/07 15:52:51 INFO  - jmeter.JMeter: Version 3.1 r1770033 
+2019/03/07 15:52:51 INFO  - jmeter.JMeter: java.version=1.8.0_91 
+2019/03/07 15:52:51 INFO  - jmeter.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM 
+2019/03/07 15:52:51 INFO  - jmeter.JMeter: os.name=Windows 7 
+2019/03/07 15:52:51 INFO  - jmeter.JMeter: os.arch=amd64 
+2019/03/07 15:52:51 INFO  - jmeter.JMeter: os.version=6.1 
+2019/03/07 15:52:51 INFO  - jmeter.JMeter: file.encoding=UTF8 
+2019/03/07 15:52:51 INFO  - jmeter.JMeter: Max memory     =514850816 
+2019/03/07 15:52:51 INFO  - jmeter.JMeter: Available Processors =4 
+2019/03/07 15:52:51 INFO  - jmeter.JMeter: Default Locale=中文 (中国) 
+2019/03/07 15:52:51 INFO  - jmeter.JMeter: JMeter  Locale=中文 (中国) 
+2019/03/07 15:52:51 INFO  - jmeter.JMeter: JMeterHome=F:\admin\jmeterTests\target\jmeter 
+2019/03/07 15:52:51 INFO  - jmeter.JMeter: user.dir  =F:\admin\jmeterTests\target\jmeter\bin 
+2019/03/07 15:52:51 INFO  - jmeter.JMeter: PWD       =F:\admin\jmeterTests\target\jmeter\bin 
+2019/03/07 15:52:51 INFO  - jmeter.JMeter: IP: 192.168.3.69 Name: hepeng FullName: hepeng 
+2019/03/07 15:52:51 INFO  - jmeter.services.FileServer: Default base='F:\admin\jmeterTests\target\jmeter\bin' 
+2019/03/07 15:52:51 INFO  - jmeter.services.FileServer: Set new base='F:\admin\jmeterTests\target\jmeter\testFiles' 
+2019/03/07 15:52:51 INFO  - jmeter.save.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2 
+2019/03/07 15:52:51 INFO  - jmeter.save.SaveService: Using SaveService properties file encoding UTF-8 
+2019/03/07 15:52:51 INFO  - jmeter.save.SaveService: Using SaveService properties version 3.1 
+2019/03/07 15:52:51 INFO  - jmeter.save.SaveService: All converter versions present and correct 
+2019/03/07 15:52:51 INFO  - jmeter.save.SaveService: Loading file: F:\admin\jmeterTests\target\jmeter\testFiles\接口自动化.jmx 
+2019/03/07 15:52:51 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2019/03/07 15:52:51 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2019/03/07 15:52:51 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2019/03/07 15:52:51 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2019/03/07 15:52:51 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser 
+2019/03/07 15:52:51 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser 
+2019/03/07 15:52:51 INFO  - jmeter.JMeter: Creating summariser <summary> 
+2019/03/07 15:52:51 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2019/03/07 15:52:51 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2019/03/07 15:52:51 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2019/03/07 15:52:51 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must contain the string: '.functions.' 
+2019/03/07 15:52:51 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must not contain the string: '.gui.' 
+2019/03/07 15:52:51 INFO  - jmeter.testelement.TestPlan: add F:\apache-jmeter-2.9\apache-jmeter-2.9\lib\ext\test.jar to classpath 
+2019/03/07 15:52:51 INFO  - jmeter.JMeter: 正在运行的测试 (1551945171911) 
+2019/03/07 15:52:51 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : 营销活动 
+2019/03/07 15:52:51 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group 营销活动. 
+2019/03/07 15:52:51 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2019/03/07 15:52:51 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2019/03/07 15:52:51 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2019/03/07 15:52:51 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 2 : 投资相关 
+2019/03/07 15:52:51 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group 投资相关. 
+2019/03/07 15:52:51 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2019/03/07 15:52:51 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 2 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2019/03/07 15:52:51 INFO  - jmeter.threads.JMeterThread: Thread started: 营销活动 1-1 
+2019/03/07 15:52:52 INFO  - jmeter.threads.ThreadGroup: Started thread group number 2 
+2019/03/07 15:52:52 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 3 : 网贷天眼 
+2019/03/07 15:52:52 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group 网贷天眼. 
+2019/03/07 15:52:52 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2019/03/07 15:52:52 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 3 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2019/03/07 15:52:52 INFO  - jmeter.threads.JMeterThread: Thread started: 投资相关 2-1 
+2019/03/07 15:52:52 INFO  - jmeter.threads.ThreadGroup: Started thread group number 3 
+2019/03/07 15:52:52 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 4 : 网贷之家 
+2019/03/07 15:52:52 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group 网贷之家. 
+2019/03/07 15:52:52 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2019/03/07 15:52:52 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 4 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2019/03/07 15:52:52 INFO  - jmeter.threads.JMeterThread: Thread started: 网贷天眼 3-1 
+2019/03/07 15:52:52 INFO  - jmeter.threads.ThreadGroup: Started thread group number 4 
+2019/03/07 15:52:52 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2019/03/07 15:52:52 INFO  - jmeter.protocol.http.sampler.HTTPHCAbstractImpl: Local host = hepeng 
+2019/03/07 15:52:52 INFO  - jmeter.protocol.http.sampler.HTTPHC4Impl: HTTP request retry count = 0 
+2019/03/07 15:52:52 INFO  - jmeter.samplers.SampleResult: Note: Sample TimeStamps are START times 
+2019/03/07 15:52:52 INFO  - jmeter.samplers.SampleResult: sampleresult.default.encoding is set to utf-8 
+2019/03/07 15:52:52 INFO  - jmeter.samplers.SampleResult: sampleresult.useNanoTime=true 
+2019/03/07 15:52:52 INFO  - jmeter.samplers.SampleResult: sampleresult.nanoThreadSleep=5000 
+2019/03/07 15:52:52 INFO  - jmeter.threads.JMeterThread: Thread started: 网贷之家 4-1 
+2019/03/07 15:52:52 INFO  - jmeter.protocol.http.sampler.LazySchemeSocketFactory: Setting up HTTPS TrustAll Socket Factory 
+2019/03/07 15:52:52 INFO  - jmeter.util.JsseSSLManager: Using default SSL protocol: TLS 
+2019/03/07 15:52:52 INFO  - jmeter.util.JsseSSLManager: SSL session context: per-thread 
+2019/03/07 15:52:52 INFO  - jmeter.util.SSLManager: JmeterKeyStore Location:  type JKS 
+2019/03/07 15:52:52 INFO  - jmeter.util.SSLManager: KeyStore created OK 
+2019/03/07 15:52:52 WARN  - jmeter.util.SSLManager: Keystore file not found, loading empty keystore 
+2019/03/07 15:52:52 INFO  - jmeter.threads.JMeterThread: Thread is done: 网贷之家 4-1 
+2019/03/07 15:52:52 INFO  - jmeter.threads.JMeterThread: Thread finished: 网贷之家 4-1 
+2019/03/07 15:52:52 INFO  - jmeter.threads.JMeterThread: Thread is done: 营销活动 1-1 
+2019/03/07 15:52:52 INFO  - jmeter.threads.JMeterThread: Thread finished: 营销活动 1-1 
+2019/03/07 15:52:53 INFO  - jmeter.threads.JMeterThread: Thread is done: 网贷天眼 3-1 
+2019/03/07 15:52:53 INFO  - jmeter.threads.JMeterThread: Thread finished: 网贷天眼 3-1 
+2019/03/07 15:52:53 INFO  - jmeter.threads.JMeterThread: Thread is done: 投资相关 2-1 
+2019/03/07 15:52:53 INFO  - jmeter.threads.JMeterThread: Thread finished: 投资相关 2-1 
+2019/03/07 15:52:53 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2019/03/07 15:52:53 INFO  - jmeter.reporters.Summariser: summary =     21 in 00:00:02 =   13.6/s Avg:   152 Min:    22 Max:   583 Err:     0 (0.00%) 
