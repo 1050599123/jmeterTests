@@ -60,8 +60,11 @@
 				<artifactId>jmeter-maven-plugin</artifactId>
 				<version>2.1.0</version>
 				<configuration>
+				    <!-- 设置jmeter生成结果文件格式-->
 					<resultsFileFormat>xml</resultsFileFormat>
+					<!-- 设置忽略失败是否停止运行-->
 					<ignoreResultFailures>true</ignoreResultFailures>
+					<!--设置结果是否有时间戳-->
 					<testResultsTimestamp>flase</testResultsTimestamp>
 				</configuration>
 				<executions>
@@ -109,6 +112,7 @@
 							<dir>${jmeter.result.jtl.dir}</dir>
 							<stylesheet>src\test\resources\jmeter-results-detail-report_21.xsl</stylesheet>
 							<outputDir>${jmeter.result.html.dir}</outputDir>
+							<!-- 把jtl格式转传承html -->
 							<fileMappers>
 								<fileMapper
 									implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">

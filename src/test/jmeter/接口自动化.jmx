@@ -48,15 +48,25 @@
             <stringProp name="Argument.value">80</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="servicedatabaseurl" elementType="Argument">
+            <stringProp name="Argument.name">servicedatabaseurl</stringProp>
+            <stringProp name="Argument.value">jdbc:mysql://172.18.50.2:3316/?useSSL = false?characterEncoding=utf-8</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="localdatabaseurl" elementType="Argument">
+            <stringProp name="Argument.name">localdatabaseurl</stringProp>
+            <stringProp name="Argument.value">jdbc:mysql://47.107.242.172:3316/?useSSL = false?characterEncoding=utf-8</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
         </collectionProp>
       </Arguments>
       <hashTree/>
-      <JDBCDataSource guiclass="TestBeanGUI" testclass="JDBCDataSource" testname="JDBC Connection Configuration" enabled="false">
+      <JDBCDataSource guiclass="TestBeanGUI" testclass="JDBCDataSource" testname="JDBC Connection Configuration" enabled="true">
         <boolProp name="autocommit">true</boolProp>
         <stringProp name="checkQuery">Select 1</stringProp>
         <stringProp name="connectionAge">5000</stringProp>
         <stringProp name="dataSource">MySQL_re</stringProp>
-        <stringProp name="dbUrl">jdbc:mysql://47.107.242.172:3316/?useSSL = false?characterEncoding=utf-8</stringProp>
+        <stringProp name="dbUrl">${servicedatabaseurl}</stringProp>
         <stringProp name="driver">com.mysql.jdbc.Driver</stringProp>
         <boolProp name="keepAlive">true</boolProp>
         <stringProp name="password">7HuowaffDtoVtc58yiAw</stringProp>
@@ -3497,7 +3507,7 @@ vars.put(&quot;v&quot;,v.toString());
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-          <stringProp name="HTTPSampler.path">/hd</stringProp>
+          <stringProp name="HTTPSampler.path">/api</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3660,7 +3670,7 @@ vars.put(&quot;v&quot;,v.toString());
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-          <stringProp name="HTTPSampler.path">/hd</stringProp>
+          <stringProp name="HTTPSampler.path">/api</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -5484,7 +5494,7 @@ vars.put(&quot;v&quot;,v.toString());
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="获取借款人用户ID" enabled="false">
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="获取借款人用户ID" enabled="true">
           <stringProp name="dataSource">MySQL_re</stringProp>
           <stringProp name="queryType">Select Statement</stringProp>
           <stringProp name="query">select CONCAT(&quot;user_id=&quot;,id) from mdtx_user.user_basic_info where phone = &quot;${userName3}&quot; order by create_time desc limit 1;
@@ -5498,7 +5508,7 @@ vars.put(&quot;v&quot;,v.toString());
           <stringProp name="resultSetHandler">Store as String</stringProp>
         </JDBCSampler>
         <hashTree/>
-        <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="正则表达式提取器_提取借款人用户ID" enabled="false">
+        <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="正则表达式提取器_提取借款人用户ID" enabled="true">
           <stringProp name="RegexExtractor.useHeaders">false</stringProp>
           <stringProp name="RegexExtractor.refname">user_id3</stringProp>
           <stringProp name="RegexExtractor.regex">user_id=(.+)</stringProp>
@@ -5507,7 +5517,7 @@ vars.put(&quot;v&quot;,v.toString());
           <stringProp name="RegexExtractor.match_number">2</stringProp>
         </RegexExtractor>
         <hashTree/>
-        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="设置协议签约字段为空" enabled="false">
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="设置协议签约字段为空" enabled="true">
           <stringProp name="dataSource">MySQL_re</stringProp>
           <stringProp name="queryType">Update Statement</stringProp>
           <stringProp name="query">delete from mdtx_business.xw_sign_info where user_id = &quot;${user_id3}&quot;;
@@ -5674,7 +5684,7 @@ vars.put(&quot;v&quot;,v.toString());
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="开启或关闭自动还款接口" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="开启或关闭自动还款接口" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="method" elementType="HTTPArgument">
