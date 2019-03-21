@@ -522,7 +522,7 @@ vars.put(&quot;sign&quot;,sign);
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="投资相关" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="投资相关" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -21212,7 +21212,7 @@ vars.put(&quot;v&quot;,v.toString());
             </elementProp>
             <elementProp name="orderId" elementType="Argument">
               <stringProp name="Argument.name">orderId</stringProp>
-              <stringProp name="Argument.value">108336</stringProp>
+              <stringProp name="Argument.value">108446</stringProp>
               <stringProp name="Argument.desc">发起转让的订单id</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
@@ -22247,7 +22247,7 @@ String method=&quot;user.transferDetail&quot;;
 String v=&quot;1.3&quot;; 
 String KEY=&quot;A1B2C3D4E5F60708&quot;; 
 //接口参数
-String orderId=&quot;108336&quot;; 
+String orderId=&quot;108452&quot;; 
 
 String a = &quot;{\&quot;orderId\&quot;:&apos;&quot;+orderId+&quot;&apos;}&quot;;
 //使用加密方法进行加密
@@ -22285,6 +22285,37 @@ vars.put(&quot;sign&quot;, sign);
           <boolProp name="TransactionController.parent">false</boolProp>
         </TransactionController>
         <hashTree>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="简单控制器0-关闭抢标小助手" enabled="true"/>
+          <hashTree>
+            <JDBCDataSource guiclass="TestBeanGUI" testclass="JDBCDataSource" testname="JDBC Connection-Business" enabled="false">
+              <boolProp name="autocommit">true</boolProp>
+              <stringProp name="checkQuery">Select 1</stringProp>
+              <stringProp name="connectionAge">5000</stringProp>
+              <stringProp name="dataSource">MySQL_Busniess</stringProp>
+              <stringProp name="dbUrl">jdbc:mysql://47.107.242.172:3316/mdtx_business?characterEncoding=utf-8&amp;zeroDateTimeBehavior=convertToNull&amp;allowMultiQueries=true</stringProp>
+              <stringProp name="driver">com.mysql.jdbc.Driver</stringProp>
+              <boolProp name="keepAlive">true</boolProp>
+              <stringProp name="password">7HuowaffDtoVtc58yiAw</stringProp>
+              <stringProp name="poolMax">10</stringProp>
+              <stringProp name="timeout">10000</stringProp>
+              <stringProp name="transactionIsolation">DEFAULT</stringProp>
+              <stringProp name="trimInterval">60000</stringProp>
+              <stringProp name="username">test_admin</stringProp>
+            </JDBCDataSource>
+            <hashTree/>
+            <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="关闭抢标小助手" enabled="true">
+              <stringProp name="dataSource">MySQL_re</stringProp>
+              <stringProp name="queryType">Callable Statement</stringProp>
+              <stringProp name="query">update mdtx_business.auto_tender set enable=0;</stringProp>
+              <stringProp name="queryArguments"></stringProp>
+              <stringProp name="queryArgumentsTypes"></stringProp>
+              <stringProp name="variableNames"></stringProp>
+              <stringProp name="resultVariable"></stringProp>
+              <stringProp name="queryTimeout"></stringProp>
+              <stringProp name="resultSetHandler">Store as String</stringProp>
+            </JDBCSampler>
+            <hashTree/>
+          </hashTree>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="简单控制器1-确认转让" enabled="true"/>
           <hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="用户确认转让" enabled="true">
@@ -22436,10 +22467,26 @@ vars.put(&quot;sign&quot;, sign);
           </hashTree>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="简单控制器2-重置转让次数0" enabled="true"/>
           <hashTree>
+            <JDBCDataSource guiclass="TestBeanGUI" testclass="JDBCDataSource" testname="JDBC Connection-Business" enabled="false">
+              <boolProp name="autocommit">true</boolProp>
+              <stringProp name="checkQuery">Select 1</stringProp>
+              <stringProp name="connectionAge">5000</stringProp>
+              <stringProp name="dataSource">MySQL_Busniess</stringProp>
+              <stringProp name="dbUrl">jdbc:mysql://47.107.242.172:3316/mdtx_business?characterEncoding=utf-8&amp;zeroDateTimeBehavior=convertToNull&amp;allowMultiQueries=true</stringProp>
+              <stringProp name="driver">com.mysql.jdbc.Driver</stringProp>
+              <boolProp name="keepAlive">true</boolProp>
+              <stringProp name="password">7HuowaffDtoVtc58yiAw</stringProp>
+              <stringProp name="poolMax">10</stringProp>
+              <stringProp name="timeout">10000</stringProp>
+              <stringProp name="transactionIsolation">DEFAULT</stringProp>
+              <stringProp name="trimInterval">60000</stringProp>
+              <stringProp name="username">test_admin</stringProp>
+            </JDBCDataSource>
+            <hashTree/>
             <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="重置转让次数为0" enabled="true">
               <stringProp name="dataSource">MySQL_re</stringProp>
               <stringProp name="queryType">Callable Statement</stringProp>
-              <stringProp name="query">update  mdtx_business.creditor_transfer_cancel_record set cancel_times=0 where tender_detail_id=&quot;${orderId}&quot;;
+              <stringProp name="query">update mdtx_business.creditor_transfer_cancel_record set cancel_times=0 where tender_detail_id=&quot;${orderId}&quot;;
 </stringProp>
               <stringProp name="queryArguments"></stringProp>
               <stringProp name="queryArgumentsTypes"></stringProp>
