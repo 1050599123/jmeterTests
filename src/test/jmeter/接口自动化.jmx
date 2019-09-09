@@ -2459,7 +2459,7 @@ vars.put(&quot;v&quot;,v.toString());
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="登录" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="投资人账户登录" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="method" elementType="HTTPArgument">
@@ -18191,6 +18191,286 @@ vars.put(&quot;sign&quot;,sign);
           <stringProp name="TestPlan.comments">若登录成功则继续执行相关接口</stringProp>
         </IfController>
         <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="借款人 -- 企业开户接口" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="method" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.value">user.enterpriseRegister</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">method</stringProp>
+                </elementProp>
+                <elementProp name="appKey" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.value">00000001</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">appKey</stringProp>
+                </elementProp>
+                <elementProp name="v" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.value">5.0.0</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">v</stringProp>
+                </elementProp>
+                <elementProp name="format" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">json</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">format</stringProp>
+                </elementProp>
+                <elementProp name="locale" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">cn</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">locale</stringProp>
+                </elementProp>
+                <elementProp name="sessionId" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.value">${sessionId1}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">sessionId</stringProp>
+                </elementProp>
+                <elementProp name="timestamp" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.value">${timestamp}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">timestamp</stringProp>
+                </elementProp>
+                <elementProp name="bizContent" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.value">${bizContent}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">bizContent</stringProp>
+                </elementProp>
+                <elementProp name="sign" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.value">${sign}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">sign</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${serverIP}</stringProp>
+            <stringProp name="HTTPSampler.port">${port}</stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+            <stringProp name="HTTPSampler.path">/api</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="enterpriseName" elementType="Argument">
+                  <stringProp name="Argument.name">enterpriseName</stringProp>
+                  <stringProp name="Argument.value">民加科风信息技术有限公司</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="enterpriseNo" elementType="Argument">
+                  <stringProp name="Argument.name">enterpriseNo</stringProp>
+                  <stringProp name="Argument.value">123116789012345</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="enterpriseNoType" elementType="Argument">
+                  <stringProp name="Argument.name">enterpriseNoType</stringProp>
+                  <stringProp name="Argument.value">1</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="bankApprovalNum" elementType="Argument">
+                  <stringProp name="Argument.name">bankApprovalNum</stringProp>
+                  <stringProp name="Argument.value">J2281100724201</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="organizationCreditCode" elementType="Argument">
+                  <stringProp name="Argument.name">organizationCreditCode</stringProp>
+                  <stringProp name="Argument.value">G1052110300347280H</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="organizationCode" elementType="Argument">
+                  <stringProp name="Argument.name">organizationCode</stringProp>
+                  <stringProp name="Argument.value">79926726X</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="corporationName" elementType="Argument">
+                  <stringProp name="Argument.name">corporationName</stringProp>
+                  <stringProp name="Argument.value">嘟嘟嘟</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="corporationNum" elementType="Argument">
+                  <stringProp name="Argument.name">corporationNum</stringProp>
+                  <stringProp name="Argument.value">110221198011229869</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="corporationPhone" elementType="Argument">
+                  <stringProp name="Argument.name">corporationPhone</stringProp>
+                  <stringProp name="Argument.value">18655289201</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="corporationNumType" elementType="Argument">
+                  <stringProp name="Argument.name">corporationNumType</stringProp>
+                  <stringProp name="Argument.value">1</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="linkmanName" elementType="Argument">
+                  <stringProp name="Argument.name">linkmanName</stringProp>
+                  <stringProp name="Argument.value">嘟嘟嘟</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="linkmanPhone" elementType="Argument">
+                  <stringProp name="Argument.name">linkmanPhone</stringProp>
+                  <stringProp name="Argument.value">18655289201</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="linkmanNum" elementType="Argument">
+                  <stringProp name="Argument.name">linkmanNum</stringProp>
+                  <stringProp name="Argument.value">110221198011229869</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="bankCode" elementType="Argument">
+                  <stringProp name="Argument.name">bankCode</stringProp>
+                  <stringProp name="Argument.value">BKCH</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="businessToPublicAccount" elementType="Argument">
+                  <stringProp name="Argument.name">businessToPublicAccount</stringProp>
+                  <stringProp name="Argument.value">6013827003477928979</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="taxRegistrationCertificateNum" elementType="Argument">
+                  <stringProp name="Argument.name">taxRegistrationCertificateNum</stringProp>
+                  <stringProp name="Argument.value">992324167072196</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="creditCodeCertificateImg" elementType="Argument">
+                  <stringProp name="Argument.name">creditCodeCertificateImg</stringProp>
+                  <stringProp name="Argument.value"></stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="businessLicenceImg" elementType="Argument">
+                  <stringProp name="Argument.name">businessLicenceImg</stringProp>
+                  <stringProp name="Argument.value">https://tdocument.mindai.com/admin/content/pic/2019/1/25/cadd7a95-2976-4c24-9b51-41f4036e8107.png</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="taxRegistrationCertificateImg" elementType="Argument">
+                  <stringProp name="Argument.name">taxRegistrationCertificateImg</stringProp>
+                  <stringProp name="Argument.value">https://tdocument.mindai.com/admin/content/pic/2019/1/25/cadd7a95-2976-4c24-9b51-41f4036e8107.png</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="bankApprovalImg" elementType="Argument">
+                  <stringProp name="Argument.name">bankApprovalImg</stringProp>
+                  <stringProp name="Argument.value">https://tdocument.mindai.com/admin/content/pic/2019/1/25/cadd7a95-2976-4c24-9b51-41f4036e8107.png</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="organizationCreditCodeImg" elementType="Argument">
+                  <stringProp name="Argument.name">organizationCreditCodeImg</stringProp>
+                  <stringProp name="Argument.value">https://tdocument.mindai.com/admin/content/pic/2019/1/25/cadd7a95-2976-4c24-9b51-41f4036e8107.png</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="organizationCodeImg" elementType="Argument">
+                  <stringProp name="Argument.name">organizationCodeImg</stringProp>
+                  <stringProp name="Argument.value">https://tdocument.mindai.com/admin/content/pic/2019/1/25/cadd7a95-2976-4c24-9b51-41f4036e8107.png</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="corporationCard1" elementType="Argument">
+                  <stringProp name="Argument.name">corporationCard1</stringProp>
+                  <stringProp name="Argument.value">https://tdocument.mindai.com/admin/content/pic/2019/1/25/cadd7a95-2976-4c24-9b51-41f4036e8107.png</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="corporationCard2" elementType="Argument">
+                  <stringProp name="Argument.name">corporationCard2</stringProp>
+                  <stringProp name="Argument.value"></stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </Arguments>
+            <hashTree/>
+            <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
+              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"></stringProp>
+              <boolProp name="resetInterpreter">false</boolProp>
+              <stringProp name="script">import org.jmeter.cases.InterfaceFunction;
+import org.jmeter.utils.AESUtils;
+import org.jmeter.utils.DateUtils;
+//new一个实例
+InterfaceFunction interfun=new InterfaceFunction();
+String method=&quot;user.enterpriseRegister&quot;; 
+String v=&quot;5.0.0&quot;; 
+String KEY=&quot;${KEY}&quot;; 
+String needExtParams=&quot;1&quot;; 
+String cbUrl=&quot;${cbUrl}&quot;; 
+String enterpriseName=&quot;${enterpriseName}&quot;; 
+String enterpriseNo=&quot;${enterpriseNo}&quot;; 
+String enterpriseNoType=&quot;${enterpriseNoType}&quot;; 
+String bankApprovalNum=&quot;${bankApprovalNum}&quot;; 
+String organizationCreditCode=&quot;${organizationCreditCode}&quot;; 
+String organizationCode=&quot;${organizationCode}&quot;; 
+String corporationName=&quot;${corporationName}&quot;; 
+String corporationNum=&quot;${corporationNum}&quot;; 
+String corporationPhone=&quot;${corporationPhone}&quot;; 
+String corporationNumType=&quot;${corporationNumType}&quot;; 
+String linkmanName=&quot;${linkmanName}&quot;; 
+String linkmanPhone=&quot;${linkmanPhone}&quot;; 
+String linkmanNum=&quot;${linkmanNum}&quot;; 
+String bankCode=&quot;${bankCode}&quot;; 
+String businessToPublicAccount=&quot;${businessToPublicAccount}&quot;; 
+String taxRegistrationCertificateNum=&quot;${taxRegistrationCertificateNum}&quot;; 
+String creditCodeCertificateImg=&quot;${creditCodeCertificateImg}&quot;; 
+String businessLicenceImg=&quot;${businessLicenceImg}&quot;; 
+String taxRegistrationCertificateImg=&quot;${taxRegistrationCertificateImg}&quot;; 
+String bankApprovalImg=&quot;${bankApprovalImg}&quot;; 
+String organizationCreditCodeImg=&quot;${organizationCreditCodeImg}&quot;; 
+String organizationCodeImg=&quot;${organizationCodeImg}&quot;; 
+String corporationCard1=&quot;${corporationCard1}&quot;; 
+String corporationCard2=&quot;${corporationCard2}&quot;; 
+String a = &quot;{\&quot;deviceType\&quot;:\&quot;ios\&quot;,\&quot;enterpriseName\&quot;:\&quot;&quot;+enterpriseName+&quot;\&quot;,\&quot;enterpriseNo\&quot;:\&quot;&quot;+enterpriseNo+&quot;\&quot;,\&quot;enterpriseNoType\&quot;:\&quot;&quot;+enterpriseNoType+&quot;\&quot;,\&quot;bankApprovalNum\&quot;:\&quot;&quot;+bankApprovalNum+&quot;\&quot;,\&quot;organizationCreditCode\&quot;:\&quot;&quot;+organizationCreditCode+&quot;\&quot;,\&quot;organizationCode\&quot;:\&quot;&quot;+organizationCode+&quot;\&quot;,\&quot;corporationName\&quot;:\&quot;&quot;+corporationName+&quot;\&quot;,\&quot;corporationNum\&quot;:\&quot;&quot;+corporationNum+&quot;\&quot;,\&quot;corporationPhone\&quot;:\&quot;&quot;+corporationPhone+&quot;\&quot;,\&quot;corporationNumType\&quot;:\&quot;&quot;+corporationNumType+&quot;\&quot;,\&quot;linkmanName\&quot;:\&quot;&quot;+linkmanName+&quot;\&quot;,\&quot;linkmanPhone\&quot;:\&quot;&quot;+linkmanPhone+&quot;\&quot;,\&quot;linkmanNum\&quot;:\&quot;&quot;+linkmanNum+&quot;\&quot;,\&quot;bankCode\&quot;:\&quot;&quot;+bankCode+&quot;\&quot;,\&quot;businessToPublicAccount\&quot;:\&quot;&quot;+businessToPublicAccount+&quot;\&quot;,\&quot;taxRegistrationCertificateNum\&quot;:\&quot;&quot;+taxRegistrationCertificateNum+&quot;\&quot;,\&quot;creditCodeCertificateImg\&quot;:\&quot;&quot;+creditCodeCertificateImg+&quot;\&quot;,\&quot;businessLicenceImg\&quot;:\&quot;&quot;+businessLicenceImg+&quot;\&quot;,\&quot;taxRegistrationCertificateImg\&quot;:\&quot;&quot;+taxRegistrationCertificateImg+&quot;\&quot;,\&quot;bankApprovalImg\&quot;:\&quot;&quot;+bankApprovalImg+&quot;\&quot;,\&quot;organizationCreditCodeImg\&quot;:\&quot;&quot;+organizationCreditCodeImg+&quot;\&quot;,\&quot;organizationCodeImg\&quot;:\&quot;&quot;+organizationCodeImg+&quot;\&quot;,\&quot;corporationCard1\&quot;:\&quot;&quot;+corporationCard1+&quot;\&quot;,\&quot;corporationCard2\&quot;:\&quot;&quot;+corporationCard2+&quot;\&quot;,\&quot;channel\&quot;:\&quot;AppStore\&quot;,\&quot;appVersion\&quot;:\&quot;5.5.2\&quot;,\&quot;platform\&quot;:\&quot;mdtx\&quot;,\&quot;role\&quot;:\&quot;3\&quot;}&quot;;
+//使用加密方法进行加密
+bizContent = AESUtils.encrypt(a, KEY);
+//把a的值输出到变量bizContent中
+vars.put(&quot;bizContent&quot;, bizContent);
+//System.out.println(&quot;加密后参数为&quot;+bizContent);
+//获取当前时间戳
+String timestamp = DateUtils.format(new Date(), &quot;yyyy-MM-dd HH:mm:ss&quot;);
+vars.put(&quot;timestamp&quot;, timestamp);
+//System.out.println(&quot;当前时间戳为&quot;+timestamp);
+//获取jmeterh中sessionid的值
+String sessionid=vars.get(&quot;sessionId1&quot;);
+//System.out.println(&quot;sessionid值为&quot;+sessionid);
+//进行签名
+String sign=interfun.ssign(sessionid, method, v, bizContent, timestamp);
+//String sign=interfun.Openredsign(sessionid, activityId);
+//System.out.println(&quot;签名后参数为&quot;+sign);
+//把sign的值输出到变量sign中
+vars.put(&quot;sign&quot;,sign);
+</stringProp>
+            </BeanShellPreProcessor>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="响应断言" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="799375">成功</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">2</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="账户页面 -- 实名认证接口" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
               <collectionProp name="Arguments.arguments">
@@ -18488,415 +18768,6 @@ vars.put(&quot;sign&quot;,sign);
           <stringProp name="TestPlan.comments">若登录成功则继续执行相关接口</stringProp>
         </IfController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="账户页面 -- 会员激活接口" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
-              <collectionProp name="Arguments.arguments">
-                <elementProp name="method" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.value">user.activateStockedUser</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">method</stringProp>
-                </elementProp>
-                <elementProp name="appKey" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.value">00000001</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">appKey</stringProp>
-                </elementProp>
-                <elementProp name="v" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.value">5.0.0</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">v</stringProp>
-                </elementProp>
-                <elementProp name="format" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">json</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">format</stringProp>
-                </elementProp>
-                <elementProp name="locale" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">cn</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">locale</stringProp>
-                </elementProp>
-                <elementProp name="sessionId" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.value">${sessionId2}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">sessionId</stringProp>
-                </elementProp>
-                <elementProp name="timestamp" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.value">${timestamp}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">timestamp</stringProp>
-                </elementProp>
-                <elementProp name="bizContent" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.value">${bizContent}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">bizContent</stringProp>
-                </elementProp>
-                <elementProp name="sign" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.value">${sign}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">sign</stringProp>
-                </elementProp>
-              </collectionProp>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain">${serverIP}</stringProp>
-            <stringProp name="HTTPSampler.port">${port}</stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            <stringProp name="HTTPSampler.protocol">http</stringProp>
-            <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-            <stringProp name="HTTPSampler.path">/api</stringProp>
-            <stringProp name="HTTPSampler.method">POST</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
-            <boolProp name="HTTPSampler.monitor">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
-              <stringProp name="filename"></stringProp>
-              <stringProp name="parameters"></stringProp>
-              <boolProp name="resetInterpreter">false</boolProp>
-              <stringProp name="script">import org.jmeter.cases.InterfaceFunction;
-import org.jmeter.utils.AESUtils;
-import org.jmeter.utils.DateUtils;
-//new一个实例
-InterfaceFunction interfun=new InterfaceFunction();
-String method=&quot;user.activateStockedUser&quot;; 
-String v=&quot;5.0.0&quot;; 
-String KEY=&quot;${KEY}&quot;; 
-String a = &quot;{\&quot;deviceType\&quot;:\&quot;ios\&quot;,\&quot;channel\&quot;:\&quot;AppStore\&quot;,\&quot;appVersion\&quot;:\&quot;5.5.2\&quot;,\&quot;platform\&quot;:\&quot;mdtx\&quot;,\&quot;role\&quot;:\&quot;2\&quot;}&quot;;
-//使用加密方法进行加密
-bizContent = AESUtils.encrypt(a, KEY);
-//把a的值输出到变量bizContent中
-vars.put(&quot;bizContent&quot;, bizContent);
-//System.out.println(&quot;加密后参数为&quot;+bizContent);
-//获取当前时间戳
-String timestamp = DateUtils.format(new Date(), &quot;yyyy-MM-dd HH:mm:ss&quot;);
-vars.put(&quot;timestamp&quot;, timestamp);
-//System.out.println(&quot;当前时间戳为&quot;+timestamp);
-//获取jmeterh中sessionid的值
-String sessionid=vars.get(&quot;sessionId2&quot;);
-//System.out.println(&quot;sessionid值为&quot;+sessionid);
-//进行签名
-String sign=interfun.ssign(sessionid, method, v, bizContent, timestamp);
-//String sign=interfun.Openredsign(sessionid, activityId);
-//System.out.println(&quot;签名后参数为&quot;+sign);
-//把sign的值输出到变量sign中
-vars.put(&quot;sign&quot;,sign);
-</stringProp>
-            </BeanShellPreProcessor>
-            <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="响应断言" enabled="true">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="799375">成功</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">2</intProp>
-            </ResponseAssertion>
-            <hashTree/>
-          </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="借款人 -- 企业开户接口" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
-              <collectionProp name="Arguments.arguments">
-                <elementProp name="method" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.value">user.enterpriseRegister</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">method</stringProp>
-                </elementProp>
-                <elementProp name="appKey" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.value">00000001</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">appKey</stringProp>
-                </elementProp>
-                <elementProp name="v" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.value">5.0.0</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">v</stringProp>
-                </elementProp>
-                <elementProp name="format" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">json</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">format</stringProp>
-                </elementProp>
-                <elementProp name="locale" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">cn</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">locale</stringProp>
-                </elementProp>
-                <elementProp name="sessionId" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.value">${sessionId1}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">sessionId</stringProp>
-                </elementProp>
-                <elementProp name="timestamp" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.value">${timestamp}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">timestamp</stringProp>
-                </elementProp>
-                <elementProp name="bizContent" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.value">${bizContent}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">bizContent</stringProp>
-                </elementProp>
-                <elementProp name="sign" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.value">${sign}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">sign</stringProp>
-                </elementProp>
-              </collectionProp>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain">${serverIP}</stringProp>
-            <stringProp name="HTTPSampler.port">${port}</stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            <stringProp name="HTTPSampler.protocol">http</stringProp>
-            <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-            <stringProp name="HTTPSampler.path">/api</stringProp>
-            <stringProp name="HTTPSampler.method">POST</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
-            <boolProp name="HTTPSampler.monitor">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
-              <collectionProp name="Arguments.arguments">
-                <elementProp name="enterpriseName" elementType="Argument">
-                  <stringProp name="Argument.name">enterpriseName</stringProp>
-                  <stringProp name="Argument.value">民加科风信息技术有限公司</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-                <elementProp name="enterpriseNo" elementType="Argument">
-                  <stringProp name="Argument.name">enterpriseNo</stringProp>
-                  <stringProp name="Argument.value">123116789012345</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-                <elementProp name="enterpriseNoType" elementType="Argument">
-                  <stringProp name="Argument.name">enterpriseNoType</stringProp>
-                  <stringProp name="Argument.value">1</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-                <elementProp name="bankApprovalNum" elementType="Argument">
-                  <stringProp name="Argument.name">bankApprovalNum</stringProp>
-                  <stringProp name="Argument.value">J2281100724201</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-                <elementProp name="organizationCreditCode" elementType="Argument">
-                  <stringProp name="Argument.name">organizationCreditCode</stringProp>
-                  <stringProp name="Argument.value">G1052110300347280H</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-                <elementProp name="organizationCode" elementType="Argument">
-                  <stringProp name="Argument.name">organizationCode</stringProp>
-                  <stringProp name="Argument.value">79926726X</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-                <elementProp name="corporationName" elementType="Argument">
-                  <stringProp name="Argument.name">corporationName</stringProp>
-                  <stringProp name="Argument.value">嘟嘟嘟</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-                <elementProp name="corporationNum" elementType="Argument">
-                  <stringProp name="Argument.name">corporationNum</stringProp>
-                  <stringProp name="Argument.value">110221198011229869</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-                <elementProp name="corporationPhone" elementType="Argument">
-                  <stringProp name="Argument.name">corporationPhone</stringProp>
-                  <stringProp name="Argument.value">18655289201</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-                <elementProp name="corporationNumType" elementType="Argument">
-                  <stringProp name="Argument.name">corporationNumType</stringProp>
-                  <stringProp name="Argument.value">1</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-                <elementProp name="linkmanName" elementType="Argument">
-                  <stringProp name="Argument.name">linkmanName</stringProp>
-                  <stringProp name="Argument.value">嘟嘟嘟</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-                <elementProp name="linkmanPhone" elementType="Argument">
-                  <stringProp name="Argument.name">linkmanPhone</stringProp>
-                  <stringProp name="Argument.value">18655289201</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-                <elementProp name="linkmanNum" elementType="Argument">
-                  <stringProp name="Argument.name">linkmanNum</stringProp>
-                  <stringProp name="Argument.value">110221198011229869</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-                <elementProp name="bankCode" elementType="Argument">
-                  <stringProp name="Argument.name">bankCode</stringProp>
-                  <stringProp name="Argument.value">BKCH</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-                <elementProp name="businessToPublicAccount" elementType="Argument">
-                  <stringProp name="Argument.name">businessToPublicAccount</stringProp>
-                  <stringProp name="Argument.value">6013827003477928979</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-                <elementProp name="taxRegistrationCertificateNum" elementType="Argument">
-                  <stringProp name="Argument.name">taxRegistrationCertificateNum</stringProp>
-                  <stringProp name="Argument.value">992324167072196</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-                <elementProp name="creditCodeCertificateImg" elementType="Argument">
-                  <stringProp name="Argument.name">creditCodeCertificateImg</stringProp>
-                  <stringProp name="Argument.value"></stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-                <elementProp name="businessLicenceImg" elementType="Argument">
-                  <stringProp name="Argument.name">businessLicenceImg</stringProp>
-                  <stringProp name="Argument.value">https://tdocument.mindai.com/admin/content/pic/2019/1/25/cadd7a95-2976-4c24-9b51-41f4036e8107.png</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-                <elementProp name="taxRegistrationCertificateImg" elementType="Argument">
-                  <stringProp name="Argument.name">taxRegistrationCertificateImg</stringProp>
-                  <stringProp name="Argument.value">https://tdocument.mindai.com/admin/content/pic/2019/1/25/cadd7a95-2976-4c24-9b51-41f4036e8107.png</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-                <elementProp name="bankApprovalImg" elementType="Argument">
-                  <stringProp name="Argument.name">bankApprovalImg</stringProp>
-                  <stringProp name="Argument.value">https://tdocument.mindai.com/admin/content/pic/2019/1/25/cadd7a95-2976-4c24-9b51-41f4036e8107.png</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-                <elementProp name="organizationCreditCodeImg" elementType="Argument">
-                  <stringProp name="Argument.name">organizationCreditCodeImg</stringProp>
-                  <stringProp name="Argument.value">https://tdocument.mindai.com/admin/content/pic/2019/1/25/cadd7a95-2976-4c24-9b51-41f4036e8107.png</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-                <elementProp name="organizationCodeImg" elementType="Argument">
-                  <stringProp name="Argument.name">organizationCodeImg</stringProp>
-                  <stringProp name="Argument.value">https://tdocument.mindai.com/admin/content/pic/2019/1/25/cadd7a95-2976-4c24-9b51-41f4036e8107.png</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-                <elementProp name="corporationCard1" elementType="Argument">
-                  <stringProp name="Argument.name">corporationCard1</stringProp>
-                  <stringProp name="Argument.value">https://tdocument.mindai.com/admin/content/pic/2019/1/25/cadd7a95-2976-4c24-9b51-41f4036e8107.png</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-                <elementProp name="corporationCard2" elementType="Argument">
-                  <stringProp name="Argument.name">corporationCard2</stringProp>
-                  <stringProp name="Argument.value"></stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-              </collectionProp>
-            </Arguments>
-            <hashTree/>
-            <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
-              <stringProp name="filename"></stringProp>
-              <stringProp name="parameters"></stringProp>
-              <boolProp name="resetInterpreter">false</boolProp>
-              <stringProp name="script">import org.jmeter.cases.InterfaceFunction;
-import org.jmeter.utils.AESUtils;
-import org.jmeter.utils.DateUtils;
-//new一个实例
-InterfaceFunction interfun=new InterfaceFunction();
-String method=&quot;user.enterpriseRegister&quot;; 
-String v=&quot;5.0.0&quot;; 
-String KEY=&quot;${KEY}&quot;; 
-String needExtParams=&quot;1&quot;; 
-String cbUrl=&quot;${cbUrl}&quot;; 
-String enterpriseName=&quot;${enterpriseName}&quot;; 
-String enterpriseNo=&quot;${enterpriseNo}&quot;; 
-String enterpriseNoType=&quot;${enterpriseNoType}&quot;; 
-String bankApprovalNum=&quot;${bankApprovalNum}&quot;; 
-String organizationCreditCode=&quot;${organizationCreditCode}&quot;; 
-String organizationCode=&quot;${organizationCode}&quot;; 
-String corporationName=&quot;${corporationName}&quot;; 
-String corporationNum=&quot;${corporationNum}&quot;; 
-String corporationPhone=&quot;${corporationPhone}&quot;; 
-String corporationNumType=&quot;${corporationNumType}&quot;; 
-String linkmanName=&quot;${linkmanName}&quot;; 
-String linkmanPhone=&quot;${linkmanPhone}&quot;; 
-String linkmanNum=&quot;${linkmanNum}&quot;; 
-String bankCode=&quot;${bankCode}&quot;; 
-String businessToPublicAccount=&quot;${businessToPublicAccount}&quot;; 
-String taxRegistrationCertificateNum=&quot;${taxRegistrationCertificateNum}&quot;; 
-String creditCodeCertificateImg=&quot;${creditCodeCertificateImg}&quot;; 
-String businessLicenceImg=&quot;${businessLicenceImg}&quot;; 
-String taxRegistrationCertificateImg=&quot;${taxRegistrationCertificateImg}&quot;; 
-String bankApprovalImg=&quot;${bankApprovalImg}&quot;; 
-String organizationCreditCodeImg=&quot;${organizationCreditCodeImg}&quot;; 
-String organizationCodeImg=&quot;${organizationCodeImg}&quot;; 
-String corporationCard1=&quot;${corporationCard1}&quot;; 
-String corporationCard2=&quot;${corporationCard2}&quot;; 
-String a = &quot;{\&quot;deviceType\&quot;:\&quot;ios\&quot;,\&quot;enterpriseName\&quot;:\&quot;&quot;+enterpriseName+&quot;\&quot;,\&quot;enterpriseNo\&quot;:\&quot;&quot;+enterpriseNo+&quot;\&quot;,\&quot;enterpriseNoType\&quot;:\&quot;&quot;+enterpriseNoType+&quot;\&quot;,\&quot;bankApprovalNum\&quot;:\&quot;&quot;+bankApprovalNum+&quot;\&quot;,\&quot;organizationCreditCode\&quot;:\&quot;&quot;+organizationCreditCode+&quot;\&quot;,\&quot;organizationCode\&quot;:\&quot;&quot;+organizationCode+&quot;\&quot;,\&quot;corporationName\&quot;:\&quot;&quot;+corporationName+&quot;\&quot;,\&quot;corporationNum\&quot;:\&quot;&quot;+corporationNum+&quot;\&quot;,\&quot;corporationPhone\&quot;:\&quot;&quot;+corporationPhone+&quot;\&quot;,\&quot;corporationNumType\&quot;:\&quot;&quot;+corporationNumType+&quot;\&quot;,\&quot;linkmanName\&quot;:\&quot;&quot;+linkmanName+&quot;\&quot;,\&quot;linkmanPhone\&quot;:\&quot;&quot;+linkmanPhone+&quot;\&quot;,\&quot;linkmanNum\&quot;:\&quot;&quot;+linkmanNum+&quot;\&quot;,\&quot;bankCode\&quot;:\&quot;&quot;+bankCode+&quot;\&quot;,\&quot;businessToPublicAccount\&quot;:\&quot;&quot;+businessToPublicAccount+&quot;\&quot;,\&quot;taxRegistrationCertificateNum\&quot;:\&quot;&quot;+taxRegistrationCertificateNum+&quot;\&quot;,\&quot;creditCodeCertificateImg\&quot;:\&quot;&quot;+creditCodeCertificateImg+&quot;\&quot;,\&quot;businessLicenceImg\&quot;:\&quot;&quot;+businessLicenceImg+&quot;\&quot;,\&quot;taxRegistrationCertificateImg\&quot;:\&quot;&quot;+taxRegistrationCertificateImg+&quot;\&quot;,\&quot;bankApprovalImg\&quot;:\&quot;&quot;+bankApprovalImg+&quot;\&quot;,\&quot;organizationCreditCodeImg\&quot;:\&quot;&quot;+organizationCreditCodeImg+&quot;\&quot;,\&quot;organizationCodeImg\&quot;:\&quot;&quot;+organizationCodeImg+&quot;\&quot;,\&quot;corporationCard1\&quot;:\&quot;&quot;+corporationCard1+&quot;\&quot;,\&quot;corporationCard2\&quot;:\&quot;&quot;+corporationCard2+&quot;\&quot;,\&quot;channel\&quot;:\&quot;AppStore\&quot;,\&quot;appVersion\&quot;:\&quot;5.5.2\&quot;,\&quot;platform\&quot;:\&quot;mdtx\&quot;,\&quot;role\&quot;:\&quot;3\&quot;}&quot;;
-//使用加密方法进行加密
-bizContent = AESUtils.encrypt(a, KEY);
-//把a的值输出到变量bizContent中
-vars.put(&quot;bizContent&quot;, bizContent);
-//System.out.println(&quot;加密后参数为&quot;+bizContent);
-//获取当前时间戳
-String timestamp = DateUtils.format(new Date(), &quot;yyyy-MM-dd HH:mm:ss&quot;);
-vars.put(&quot;timestamp&quot;, timestamp);
-//System.out.println(&quot;当前时间戳为&quot;+timestamp);
-//获取jmeterh中sessionid的值
-String sessionid=vars.get(&quot;sessionId1&quot;);
-//System.out.println(&quot;sessionid值为&quot;+sessionid);
-//进行签名
-String sign=interfun.ssign(sessionid, method, v, bizContent, timestamp);
-//String sign=interfun.Openredsign(sessionid, activityId);
-//System.out.println(&quot;签名后参数为&quot;+sign);
-//把sign的值输出到变量sign中
-vars.put(&quot;sign&quot;,sign);
-</stringProp>
-            </BeanShellPreProcessor>
-            <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="响应断言" enabled="true">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="799375">成功</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">2</intProp>
-            </ResponseAssertion>
-            <hashTree/>
-          </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="借款人 -- 账户 --  新网银行借款人账户信息" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
               <collectionProp name="Arguments.arguments">
@@ -20598,6 +20469,15 @@ vars.put(&quot;sign&quot;,sign);
 </stringProp>
             </BeanShellPreProcessor>
             <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="获取message" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">message6</stringProp>
+              <stringProp name="RegexExtractor.regex">.+&quot;message&quot;:&quot;(.+?)&quot;.+,</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">1</stringProp>
+            </RegexExtractor>
+            <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="响应断言" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="799375">成功</stringProp>
@@ -20608,125 +20488,113 @@ vars.put(&quot;sign&quot;,sign);
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="借款人 -- 设置协议签约字段为空" enabled="true">
-            <stringProp name="dataSource">MySQL_re</stringProp>
-            <stringProp name="queryType">Update Statement</stringProp>
-            <stringProp name="query">delete from mdtx_business.xw_sign_info where user_id = &quot;${userId1}&quot;;
-
-
-
-
-
-</stringProp>
-            <stringProp name="queryArguments"></stringProp>
-            <stringProp name="queryArgumentsTypes"></stringProp>
-            <stringProp name="variableNames"></stringProp>
-            <stringProp name="resultVariable"></stringProp>
-            <stringProp name="queryTimeout"></stringProp>
-            <stringProp name="resultSetHandler">Store as String</stringProp>
-          </JDBCSampler>
-          <hashTree/>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="借款人 -- 个人中心 --开启或关闭自动还款接口" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
-              <collectionProp name="Arguments.arguments">
-                <elementProp name="method" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.value">user.borrowAutoRepay</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">method</stringProp>
-                </elementProp>
-                <elementProp name="appKey" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.value">00000001</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">appKey</stringProp>
-                </elementProp>
-                <elementProp name="v" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.value">5.0.0</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">v</stringProp>
-                </elementProp>
-                <elementProp name="format" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">json</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">format</stringProp>
-                </elementProp>
-                <elementProp name="locale" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">cn</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">locale</stringProp>
-                </elementProp>
-                <elementProp name="sessionId" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.value">${sessionId3}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">sessionId</stringProp>
-                </elementProp>
-                <elementProp name="timestamp" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.value">${timestamp}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">timestamp</stringProp>
-                </elementProp>
-                <elementProp name="bizContent" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.value">${bizContent}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">bizContent</stringProp>
-                </elementProp>
-                <elementProp name="sign" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.value">${sign}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">sign</stringProp>
-                </elementProp>
-              </collectionProp>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain">${serverIP}</stringProp>
-            <stringProp name="HTTPSampler.port">${port}</stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            <stringProp name="HTTPSampler.protocol">http</stringProp>
-            <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-            <stringProp name="HTTPSampler.path">/api</stringProp>
-            <stringProp name="HTTPSampler.method">POST</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
-            <boolProp name="HTTPSampler.monitor">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-          </HTTPSamplerProxy>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="判断获取存管验证码是否成功" enabled="true">
+            <stringProp name="IfController.condition">&quot;${message6}&quot;==&quot;成功&quot;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+            <stringProp name="TestPlan.comments">若成功则继续执行相关接口</stringProp>
+          </IfController>
           <hashTree>
-            <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
-              <collectionProp name="Arguments.arguments">
-                <elementProp name="smsCode" elementType="Argument">
-                  <stringProp name="Argument.name">smsCode</stringProp>
-                  <stringProp name="Argument.value">555556</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <stringProp name="Argument.desc">短信验证码</stringProp>
-                </elementProp>
-              </collectionProp>
-            </Arguments>
-            <hashTree/>
-            <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
-              <stringProp name="filename"></stringProp>
-              <stringProp name="parameters"></stringProp>
-              <boolProp name="resetInterpreter">false</boolProp>
-              <stringProp name="script">import org.jmeter.cases.InterfaceFunction;
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="借款人 -- 个人中心 --开启或关闭自动还款接口" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="method" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                    <stringProp name="Argument.value">user.borrowAutoRepay</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">method</stringProp>
+                  </elementProp>
+                  <elementProp name="appKey" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                    <stringProp name="Argument.value">00000001</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">appKey</stringProp>
+                  </elementProp>
+                  <elementProp name="v" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                    <stringProp name="Argument.value">5.0.0</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">v</stringProp>
+                  </elementProp>
+                  <elementProp name="format" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">json</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">format</stringProp>
+                  </elementProp>
+                  <elementProp name="locale" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">cn</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">locale</stringProp>
+                  </elementProp>
+                  <elementProp name="sessionId" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                    <stringProp name="Argument.value">${sessionId3}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">sessionId</stringProp>
+                  </elementProp>
+                  <elementProp name="timestamp" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                    <stringProp name="Argument.value">${timestamp}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">timestamp</stringProp>
+                  </elementProp>
+                  <elementProp name="bizContent" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                    <stringProp name="Argument.value">${bizContent}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">bizContent</stringProp>
+                  </elementProp>
+                  <elementProp name="sign" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                    <stringProp name="Argument.value">${sign}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">sign</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${serverIP}</stringProp>
+              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/api</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="smsCode" elementType="Argument">
+                    <stringProp name="Argument.name">smsCode</stringProp>
+                    <stringProp name="Argument.value">555556</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <stringProp name="Argument.desc">短信验证码</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </Arguments>
+              <hashTree/>
+              <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
+                <stringProp name="filename"></stringProp>
+                <stringProp name="parameters"></stringProp>
+                <boolProp name="resetInterpreter">false</boolProp>
+                <stringProp name="script">import org.jmeter.cases.InterfaceFunction;
 import org.jmeter.utils.AESUtils;
 import org.jmeter.utils.DateUtils;
 //new一个实例
@@ -20755,16 +20623,35 @@ String sign=interfun.ssign(sessionid, method, v, bizContent, timestamp);
 //把sign的值输出到变量sign中
 vars.put(&quot;sign&quot;,sign);
 </stringProp>
-            </BeanShellPreProcessor>
-            <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="响应断言" enabled="true">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="799375">成功</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">2</intProp>
-            </ResponseAssertion>
+              </BeanShellPreProcessor>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="响应断言" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="799375">成功</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">2</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="借款人 -- 设置协议签约字段为空" enabled="true">
+              <stringProp name="dataSource">MySQL_re</stringProp>
+              <stringProp name="queryType">Update Statement</stringProp>
+              <stringProp name="query">delete from mdtx_business.xw_sign_info where user_id = &quot;${userId1}&quot;;
+
+
+
+
+
+</stringProp>
+              <stringProp name="queryArguments"></stringProp>
+              <stringProp name="queryArgumentsTypes"></stringProp>
+              <stringProp name="variableNames"></stringProp>
+              <stringProp name="resultVariable"></stringProp>
+              <stringProp name="queryTimeout"></stringProp>
+              <stringProp name="resultSetHandler">Store as String</stringProp>
+            </JDBCSampler>
             <hashTree/>
           </hashTree>
         </hashTree>
