@@ -50,12 +50,12 @@
           </elementProp>
           <elementProp name="servicedatabaseurl" elementType="Argument">
             <stringProp name="Argument.name">servicedatabaseurl</stringProp>
-            <stringProp name="Argument.value">jdbc:mysql://172.18.50.2:3316/?useSSL = false?characterEncoding=utf-8</stringProp>
+            <stringProp name="Argument.value">jdbc:mysql://172.18.50.2:3316/?useSSL=false&amp;serverTimezone=GMT&amp;characterEncoding=utf-8&amp;autoReconnect=true</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="localdatabaseurl" elementType="Argument">
             <stringProp name="Argument.name">localdatabaseurl</stringProp>
-            <stringProp name="Argument.value">jdbc:mysql://47.107.242.172:3316/?useSSL = false?characterEncoding=utf-8</stringProp>
+            <stringProp name="Argument.value">jdbc:mysql://47.107.242.172:3316/?useSSL=false&amp;serverTimezone=GMT&amp;characterEncoding=utf-8&amp;autoReconnect=true</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="appVersion" elementType="Argument">
@@ -20830,7 +20830,7 @@ vars.put(&quot;sign&quot;,sign);
             </elementProp>
             <elementProp name="orderId" elementType="Argument">
               <stringProp name="Argument.name">orderId</stringProp>
-              <stringProp name="Argument.value">108446</stringProp>
+              <stringProp name="Argument.value">95385</stringProp>
               <stringProp name="Argument.desc">发起转让的订单id</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
@@ -20926,7 +20926,7 @@ import org.jmeter.utils.AESUtils;
 import org.jmeter.utils.DateUtils;
 //new一个实例
 InterfaceFunction interfun=new InterfaceFunction();
-String username=&quot;15022333039&quot;; 
+String username=&quot;13630024016&quot;; 
 String password=&quot;123456&quot;; 
 String method=&quot;user.login&quot;; 
 String v=&quot;1.0&quot;; 
@@ -20967,7 +20967,7 @@ vars.put(&quot;sign&quot;, c);
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="投资债转标的" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="投资债转标的" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="method" elementType="HTTPArgument">
@@ -22222,7 +22222,7 @@ String KEY=&quot;A1B2C3D4E5F60708&quot;;
 //获取上一步转让提取的 transferId
 //String transferId=${transfer_ID};
 String a = &quot;{\&quot;transferId\&quot;:\&quot;${transfer_ID}\&quot;}&quot;;
-System.out.println(&quot;发起/撤销转让id为&quot;+a);
+//System.out.println(&quot;发起/撤销转让id为&quot;+a);
 
 //使用加密方法进行加密
 bizContent = AESUtils.encrypt(a, KEY);
