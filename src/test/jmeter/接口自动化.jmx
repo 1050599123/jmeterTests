@@ -77,7 +77,7 @@
         <stringProp name="connectionAge">5000</stringProp>
         <stringProp name="dataSource">MySQL_re</stringProp>
         <stringProp name="dbUrl">${servicedatabaseurl}</stringProp>
-        <stringProp name="driver">com.mysql.jdbc.Driver</stringProp>
+        <stringProp name="driver">com.mysql.cj.jdbc.Driver</stringProp>
         <boolProp name="keepAlive">true</boolProp>
         <stringProp name="password">7HuowaffDtoVtc58yiAw</stringProp>
         <stringProp name="poolMax">10</stringProp>
